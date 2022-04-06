@@ -1,5 +1,7 @@
 import Logo from './img/brand-logo.png';
 
-const Images = { Logo };
+import Homebanner from './img/homepage/homebanner.svg';
+
+const Images = { Logo, Homebanner };
 
 export default Images;
