@@ -1,4 +1,9 @@
+import { t } from 'i18next';
 import React from 'react';
+import { FaUser } from 'react-icons/fa';
+import { MdLanguage } from 'react-icons/md';
+import { Link } from 'react-router-dom';
+
 import Images from '../Images';
 
 export default function Header() {
@@ -14,42 +19,64 @@ export default function Header() {
             />
           </a>
         </div>
-        <div className="flex flex-wrap content-center justify-end gap-x-5">
+        <div className="xl:flex lg:flex hidden flex-wrap content-center justify-end gap-x-5">
+          <Link
+            to="/"
+            className="p-1 text-center px-4 min-w-[6rem] transition-all duration-150 rounded-md hover:bg-red-200 bg-[#FFE7E7] text-red-500"
+          >
+            {t('header.homepage')}
+          </Link>
+          <Link
+            to="/"
+            className="p-1 text-center px-4 min-w-[6rem] transition-all duration-150 rounded-md hover:bg-red-200 bg-[#FFE7E7] text-red-500"
+          >
+            {t('header.products')}
+          </Link>
+          <Link
+            to="/"
+            className="p-1 text-center px-4 min-w-[6rem] transition-all duration-150 rounded-md hover:bg-red-200 bg-[#FFE7E7] text-red-500"
+          >
+            {t('header.contact')}
+          </Link>
+          <Link
+            to="/"
+            className="p-1 text-center px-4 min-w-[6rem] transition-all duration-150 rounded-md hover:bg-red-200 bg-[#FFE7E7] text-red-500"
+          >
+            {t('header.whatarewedoing')}
+          </Link>
+          <Link
+            to="/"
+            className="p-1 px-2 flex flex-wrap justify-center content-center text-lg transition-all duration-150 rounded-md hover:bg-red-200 bg-[#FFE7E7] text-red-500"
+          >
+            <FaUser />
+          </Link>
           <button
             type="button"
-            className="p-1 min-w-[6rem] transition-all duration-150 rounded-md hover:bg-red-200 bg-[#FFE7E7] text-red-500"
+            className="p-1 relative group px-2 flex flex-wrap justify-center content-center text-lg transition-all duration-150 rounded-md hover:bg-red-200 bg-[#FFE7E7] text-red-500"
           >
-            Anasayfa
-          </button>
-          <button
-            type="button"
-            className="p-1 min-w-[6rem] transition-all duration-150 rounded-md hover:bg-red-200 bg-[#FFE7E7] text-red-500"
-          >
-            Ürünler
-          </button>
-          <button
-            type="button"
-            className="p-1 min-w-[6rem] transition-all duration-150 rounded-md hover:bg-red-200 bg-[#FFE7E7] text-red-500"
-          >
-            İletişim
-          </button>
-          <button
-            type="button"
-            className="p-1 px-4 min-w-[6rem] transition-all duration-150 rounded-md hover:bg-red-200 bg-[#FFE7E7] text-red-500"
-          >
-            Neler Yapıyoruz?
-          </button>
-          <button
-            type="button"
-            className="p-1 px-2 transition-all duration-150 rounded-md hover:bg-red-200 bg-[#FFE7E7] text-red-500"
-          >
-            x
-          </button>
-          <button
-            type="button"
-            className="p-1 px-2 transition-all duration-150 rounded-md hover:bg-red-200 bg-[#FFE7E7] text-red-500"
-          >
-            x
+            <MdLanguage />
+            <div className="py-1 transition-all duration-200 group-hover:opacity-100 group-hover:scale-100 group-hover:visible opacity-0 scale-75 invisible w-full absolute top-full left-0">
+              <div className="text-sm rounded-md bg-[#FFE7E7] text-red-500">
+                <ul className="grid grid-cols-1 gap-3 py-2">
+                  <li>
+                    <Link
+                      to="/"
+                      className="p-1 text-center transition-all duration-150 rounded-md hover:bg-red-200 bg-[#FFE7E7] text-red-500"
+                    >
+                      TR
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="/"
+                      className="p-1 text-center transition-all duration-150 rounded-md hover:bg-red-200 bg-[#FFE7E7] text-red-500"
+                    >
+                      EN
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </button>
         </div>
       </div>
