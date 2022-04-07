@@ -1,6 +1,7 @@
 import React from 'react';
 import { t } from 'i18next';
 import Images from '../Images';
+import MiniProducts from '../Components/PageComponents/MiniProducts';
 
 export default function Homepage() {
   return (
@@ -24,7 +25,7 @@ export default function Homepage() {
           </div>
         </div>
       </div>
-      <div>a</div>
+      <MiniProducts />
     </>
   );
 }
