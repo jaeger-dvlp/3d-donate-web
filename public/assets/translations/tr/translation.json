@@ -3,6 +3,11 @@
     "add-to-cart": "Sepete Ekle",
     "see-details": "Detaylı Gör"
   },
+  "components": {
+    "cart": {
+      "title": "Sepetim"
+    }
+  },
   "header": {
     "homepage": "Anasayfa",
     "products": "Ürünler",

@@ -3,6 +3,11 @@
     "add-to-cart": "Add to Cart",
     "see-details": "See Details"
   },
+  "components": {
+    "cart": {
+      "title": "My Cart"
+    }
+  },
   "header": {
     "homepage": "Homepage",
     "products": "Products",
