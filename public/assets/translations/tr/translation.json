@@ -5,5 +5,13 @@
     "contact": "İletişim",
     "whatarewedoing": "Neler Yapıyoruz?",
     "account": "Hesabım"
+  },
+  "pages": {
+    "homepage": {
+      "banner": {
+        "header": "Kalp neredeyse,\nUmut oradadır.",
+        "description": "3DDonate.com,\nErgoterapist İsmail İşler ve Emre Akıncı PhD. tarafından 3D yazıcılarla tamamen ücretsiz olarak dezavantajlı bireylere adaptif ürünler üretmek için organize edildi."
+      }
+    }
   }
 }
