@@ -1,3 +1,4 @@
+/* eslint-disable operator-linebreak */
 /* eslint-disable indent */
 import i18next, { t } from 'i18next';
 import React, { useState } from 'react';
@@ -65,11 +66,12 @@ export default function Header() {
               <div className="text-sm border-2 border-red-400/70 grid grid-cols-1 place-content-start place-items-start w-full rounded-md overflow-hidden p-0">
                 <a
                   href={
-                    i18next.language === 'tr'
+                    i18next.language === 'tr' ||
+                    window.location.pathname.slice(0, 3) === '/tr'
                       ? window.location.pathname.slice(
                           3,
                           window.location.pathname.length,
-                        )
+                        ) || '/'
                       : `/tr${window.location.pathname}`
                   }
                   className="p-1 w-full text-center transition-all duration-150 hover:bg-red-200 bg-white text-red-500"
@@ -141,11 +143,12 @@ export default function Header() {
           <div className="py-2" />
           <a
             href={
-              i18next.language === 'tr'
+              i18next.language === 'tr' ||
+              window.location.pathname.slice(0, 3) === '/tr'
                 ? window.location.pathname.slice(
                     3,
                     window.location.pathname.length,
-                  )
+                  ) || '/'
                 : `/tr${window.location.pathname}`
             }
             className="p-1 text-center px-4 w-full transition-all duration-150 rounded-md hover:bg-red-200 bg-[#FFE7E7] text-red-500"
