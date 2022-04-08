@@ -1,10 +1,13 @@
 /* eslint-disable react/no-unstable-nested-components */
 import i18next, { t } from 'i18next';
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import CartContext from '../../Contexts/CartContext';
 import Images from '../../Images';
 
 export default function MiniProducts() {
+  const { setMyCart } = useContext(CartContext);
+
   const mockProducts = [
     {
       productTitle: {
@@ -59,7 +62,7 @@ export default function MiniProducts() {
             <div className="w-full flex flex-wrap justify-start content-center gap-5">
               <button
                 type="button"
-                onClick={() => {}}
+                onClick={() => setMyCart(product)}
                 className="p-3 active:scale-75 font-semibold hover:bg-red-200 transition-all duration-200 rounded-lg w-full max-w-[8rem] bg-red-100 text-red-400"
               >
                 {t('buttons.add-to-cart')}
