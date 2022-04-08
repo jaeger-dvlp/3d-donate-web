@@ -8,6 +8,9 @@
       "title": "Sepetim"
     }
   },
+  "labels": {
+    "cart-empty": "Sepetiniz boş."
+  },
   "header": {
     "homepage": "Anasayfa",
     "products": "Ürünler",

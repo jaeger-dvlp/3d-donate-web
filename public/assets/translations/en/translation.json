@@ -8,6 +8,9 @@
       "title": "My Cart"
     }
   },
+  "labels": {
+    "cart-empty": "Your cart is empty."
+  },
   "header": {
     "homepage": "Homepage",
     "products": "Products",
