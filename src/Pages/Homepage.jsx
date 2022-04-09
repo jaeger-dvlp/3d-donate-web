@@ -1,5 +1,8 @@
 import React from 'react';
 import { t } from 'i18next';
+
+import { MdOutlineFileDownload } from 'react-icons/md';
+
 import Images from '../Images';
 import MiniProducts from '../Components/PageComponents/MiniProducts';
 
@@ -35,8 +38,85 @@ export default function Homepage() {
             {t('pages.homepage.section-how-help.sub-header')}
           </h2>
           <p className="text-zinc-400 text-sm font-light w-full text-center">
-            {t('pages.homepage.section-how-help.desc')}
+            {t('pages.homepage.section-how-help.description')}
           </p>
+        </div>
+      </div>
+      <div className="bg-white font-pop w-full grid grid-cols-1 place-conten-start place-items-center">
+        <div className="w-full gap-5 bg-white py-20 px-5 max-w-6xl grid xl:grid-cols-2 lg:grid-cols-2 grid-cols-1 place-content-start place-items-center">
+          <div className="grid grid-cols-1 place-content-center place-items-center">
+            <img
+              src={Images.SupportUs}
+              className="w-full xl:max-w-md lg:max-w-md max-w-sm max-h-[20rem] object-contain"
+              alt="3D Donate Support Us"
+            />
+          </div>
+          <div className="grid grid-cols-1 gap-3 place-content-center place-items-center">
+            <h1 className="text-brand-red text-center text-3xl font-bold">
+              {t('pages.homepage.mini-sections.0.header')}
+            </h1>
+            <p className="text-zinc-500 w-full max-w-lg text-md font-light text-center">
+              {t('pages.homepage.mini-sections.0.description')}
+            </p>
+            <a
+              download
+              href="x"
+              className="p-2 active:scale-75 flex mt-3 justify-center gap-1 text-center px-4 min-w-[6rem] transition-all duration-150 rounded-md hover:bg-red-200 bg-[#FFE7E7] text-brand-red"
+            >
+              {t('buttons.download-pdf')}
+              <MdOutlineFileDownload className="self-center" />
+            </a>
+          </div>
+        </div>
+        <div className="w-full gap-5 bg-white py-20 px-5 max-w-6xl grid xl:grid-cols-2 lg:grid-cols-2 grid-cols-1 place-content-start place-items-center">
+          <div className="grid xl:order-2 lg:order-2 -order-1 grid-cols-1 place-content-center place-items-center">
+            <img
+              src={Images.Cooperation}
+              className="w-full xl:max-w-md lg:max-w-md max-w-sm max-h-[20rem] object-contain"
+              alt="3D Donate Support Us"
+            />
+          </div>
+          <div className="grid grid-cols-1 gap-3 place-content-center place-items-center">
+            <h1 className="text-brand-red text-center text-3xl font-bold">
+              {t('pages.homepage.mini-sections.1.header')}
+            </h1>
+            <p className="text-zinc-500 w-full max-w-lg text-md font-light text-center">
+              {t('pages.homepage.mini-sections.1.description')}
+            </p>
+            <a
+              download
+              href="x"
+              className="p-2 active:scale-75 flex mt-3 justify-center gap-1 text-center px-4 min-w-[6rem] transition-all duration-150 rounded-md hover:bg-red-200 bg-[#FFE7E7] text-brand-red"
+            >
+              {t('buttons.download-pdf')}
+              <MdOutlineFileDownload className="self-center" />
+            </a>
+          </div>
+        </div>
+        <div className="w-full gap-5 bg-white py-20 px-5 max-w-6xl grid xl:grid-cols-2 lg:grid-cols-2 grid-cols-1 place-content-start place-items-center">
+          <div className="grid grid-cols-1 place-content-center place-items-center">
+            <img
+              src={Images.HowToSupport}
+              className="w-full xl:max-w-md lg:max-w-md max-w-sm max-h-[20rem] object-contain"
+              alt="3D Donate Support Us"
+            />
+          </div>
+          <div className="grid grid-cols-1 gap-3 place-content-center place-items-center">
+            <h1 className="text-brand-red text-center text-3xl font-bold">
+              {t('pages.homepage.mini-sections.2.header')}
+            </h1>
+            <p className="text-zinc-500 w-full max-w-lg text-md font-light text-center">
+              {t('pages.homepage.mini-sections.2.description')}
+            </p>
+            <a
+              download
+              href="x"
+              className="p-2 active:scale-75 flex mt-3 justify-center gap-1 text-center px-4 min-w-[6rem] transition-all duration-150 rounded-md hover:bg-red-200 bg-[#FFE7E7] text-brand-red"
+            >
+              {t('buttons.download-pdf')}
+              <MdOutlineFileDownload className="self-center" />
+            </a>
+          </div>
         </div>
       </div>
     </>
