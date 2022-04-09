@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unstable-nested-components */
 /* eslint-disable no-unneeded-ternary */
 import i18next, { t } from 'i18next';
-import React, { useContext, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 
 import { BsCart2, BsCheckLg, BsTrashFill } from 'react-icons/bs';
 import { IoIosClose } from 'react-icons/io';
@@ -10,6 +10,12 @@ import CartContext from '../Contexts/CartContext';
 export default function Cart() {
   const [cartActivity, setCartActivity] = useState(false);
   const { myCart, setMyCart } = useContext(CartContext);
+
+  useEffect(() => {
+    if (!cartActivity && myCart) {
+      setCartActivity(true);
+    }
+  }, [myCart]);
 
   function CartContent() {
     return (
