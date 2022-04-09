@@ -1,13 +1,13 @@
 /* eslint-disable react/no-unstable-nested-components */
 import i18next, { t } from 'i18next';
-import React, { useContext } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import CartContext from '../../Contexts/CartContext';
 import Images from '../../Images';
 
 export default function MiniProducts() {
-  const { setMyCart } = useContext(CartContext);
-
+  const { myCart, setMyCart } = useContext(CartContext);
+  const [products, setProducts] = useState(null);
   const mockProducts = [
     {
       productTitle: {
@@ -35,8 +35,14 @@ export default function MiniProducts() {
     },
   ];
 
-  function Products() {
-    return (
+  const updateCart = (product) => {
+    if (!myCart) {
+      setMyCart(product);
+    }
+  };
+
+  useEffect(() => {
+    setProducts(
       <div className="w-full font-pop place-content-start place-items-center xl:max-w-full lg:max-w-full max-w-lg grid xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10">
         {mockProducts.map((product) => (
           <div
@@ -62,7 +68,7 @@ export default function MiniProducts() {
             <div className="w-full flex flex-wrap justify-start content-center gap-5">
               <button
                 type="button"
-                onClick={() => setMyCart(product)}
+                onClick={() => updateCart(product)}
                 className="p-3 active:scale-75 font-semibold hover:bg-red-200 transition-all duration-200 rounded-lg w-full max-w-[8rem] bg-red-100 text-red-400"
               >
                 {t('buttons.add-to-cart')}
@@ -76,9 +82,9 @@ export default function MiniProducts() {
             </div>
           </div>
         ))}
-      </div>
+      </div>,
     );
-  }
+  }, []);
 
   return (
     <div className="font-pop w-full grid grid-cols-1 p-5 py-16 place-content-start place-items-center">
@@ -87,7 +93,7 @@ export default function MiniProducts() {
           <h1 className="p-3 rounded-lg w-full max-w-[15rem] bg-red-100 text-red-400 font-bold text-xl">
             {t('pages.homepage.products.our-products')}
           </h1>
-          <Products />
+          {products}
         </div>
       </div>
     </div>
