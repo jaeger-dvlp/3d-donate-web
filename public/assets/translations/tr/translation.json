@@ -2,7 +2,8 @@
   "buttons": {
     "add-to-cart": "Sepete Ekle",
     "see-details": "Detaylı Gör",
-    "download-pdf": "PDF İndir"
+    "download-pdf": "PDF İndir",
+    "see-all": "Tümünü Gör"
   },
   "components": {
     "cart": {

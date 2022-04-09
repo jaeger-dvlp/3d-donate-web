@@ -2,7 +2,8 @@
   "buttons": {
     "add-to-cart": "Add to Cart",
     "see-details": "See Details",
-    "download-pdf": "Download PDF"
+    "download-pdf": "Download PDF",
+    "see-all": "See All"
   },
   "components": {
     "cart": {
