@@ -1,7 +1,8 @@
 {
   "buttons": {
     "add-to-cart": "Sepete Ekle",
-    "see-details": "Detaylı Gör"
+    "see-details": "Detaylı Gör",
+    "download-pdf": "PDF İndir"
   },
   "components": {
     "cart": {
@@ -30,8 +31,22 @@
       "section-how-help": {
         "header": "Nasıl destek olabilirim?",
         "sub-header": "Hemen harekete geçin.",
-        "desc": "Çevrenizde ihtiyaç sahibi olan bireylere bu oluşum hakkında bilgi verebilirsiniz. Bu projenin bulunduğunuz bölgede yerel destekçisi olabilirsiniz. 3D yazıcı sahibiyseniz bulunduğunuz şehirdeki talepler için baskı yaparak destek olabilirsiniz."
-      }
+        "description": "Çevrenizde ihtiyaç sahibi olan bireylere bu oluşum hakkında bilgi verebilirsiniz. Bu projenin bulunduğunuz bölgede yerel destekçisi olabilirsiniz. 3D yazıcı sahibiyseniz bulunduğunuz şehirdeki talepler için baskı yaparak destek olabilirsiniz."
+      },
+      "mini-sections": [
+        {
+          "header": "Bize destek olun.",
+          "description": "Çabalarımıza katılmak istiyor ama nereden başlayacağınızı bilmiyor musunuz? ,Vaktinizi Bağışlayın ve destek vermek için bize e-mail ile ulaşın."
+        },
+        {
+          "header": "İş birliği.",
+          "description": "3Ddonate olarak daha geniş kitlelere ulaşabilmemiz için tüm dünyadan herkesin maddi ve manevi katkısı bizi daha güçlü yapacaktır."
+        },
+        {
+          "header": "Nasıl destek olabilirsiniz?",
+          "description": "Girişimlerimizin başarılı olabilmesi için en etkili yolun toplumun aktif bir şekilde bize katılması olduğuna inanıyoruz. Daha fazla bilgi almak için lütfen e-mail ile bize ulaşın."
+        }
+      ]
     }
   }
 }

@@ -1,7 +1,8 @@
 {
   "buttons": {
     "add-to-cart": "Add to Cart",
-    "see-details": "See Details"
+    "see-details": "See Details",
+    "download-pdf": "Download PDF"
   },
   "components": {
     "cart": {
@@ -30,8 +31,22 @@
       "section-how-help": {
         "header": "How can i support?",
         "sub-header": "Take action now.",
-        "desc": "You can give information about this formation to individuals in need around you. You can be a local supporter of this project in your region. If you have a 3D printer, you can support by printing for the demands in your city."
-      }
+        "description": "You can give information about this formation to individuals in need around you. You can be a local supporter of this project in your region. If you have a 3D printer, you can support by printing for the demands in your city."
+      },
+      "mini-sections": [
+        {
+          "header": "Support us.",
+          "description": "Want to join our efforts but don't know where to start? ,Donate your time and contact us by e-mail to give support."
+        },
+        {
+          "header": "Cooperation.",
+          "description": "As 3Ddonate, the material and moral contribution of everyone from all over the world will make us stronger so that we can reach wider audiences."
+        },
+        {
+          "header": "How can you support?",
+          "description": "We believe that the most effective way for our initiatives to be successful is for the community to actively participate in us. For more information, please contact us by e-mail."
+        }
+      ]
     }
   }
 }
