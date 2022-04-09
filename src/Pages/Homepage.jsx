@@ -29,16 +29,13 @@ export default function Homepage() {
       <div className="bg-zinc-100 font-pop grid grid-cols-1 place-content-start place-items-center py-16 px-5">
         <div className="w-full max-w-xl grid grid-cols-1 place-content-start place-items-center gap-3">
           <h1 className="text-brand-red text-center text-3xl font-bold">
-            Nasıl destek olabilirim?
+            {t('pages.homepage.section-how-help.header')}
           </h1>
           <h2 className="text-zinc-400 text-xl font-normal">
-            Hemen harekete geçin.
+            {t('pages.homepage.section-how-help.sub-header')}
           </h2>
           <p className="text-zinc-400 text-sm font-light w-full text-center">
-            Çevrenizde ihtiyaç sahibi olan bireylere bu oluşum hakkında bilgi
-            verebilirsiniz. Bu projenin bulunduğunuz bölgede yerel destekçisi
-            olabilirsiniz. 3D yazıcı sahibiyseniz bulunduğunuz şehirdeki
-            talepler için baskı yaparak destek olabilirsiniz.
+            {t('pages.homepage.section-how-help.desc')}
           </p>
         </div>
       </div>
