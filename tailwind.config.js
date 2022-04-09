@@ -5,6 +5,9 @@ module.exports = {
       fontFamily: {
         pop: 'Poppins',
       },
+      colors: {
+        'brand-red': '#FF5656',
+      },
     },
   },
   plugins: [],
