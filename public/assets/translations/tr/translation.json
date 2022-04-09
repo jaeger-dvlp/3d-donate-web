@@ -26,6 +26,11 @@
       },
       "products": {
         "our-products": "Ürünlerimiz"
+      },
+      "section-how-help": {
+        "header": "Nasıl destek olabilirim?",
+        "sub-header": "Hemen harekete geçin.",
+        "desc": "Çevrenizde ihtiyaç sahibi olan bireylere bu oluşum hakkında bilgi verebilirsiniz. Bu projenin bulunduğunuz bölgede yerel destekçisi olabilirsiniz. 3D yazıcı sahibiyseniz bulunduğunuz şehirdeki talepler için baskı yaparak destek olabilirsiniz."
       }
     }
   }

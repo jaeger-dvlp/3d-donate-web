@@ -26,6 +26,11 @@
       },
       "products": {
         "our-products": "Our Products"
+      },
+      "section-how-help": {
+        "header": "How can i support?",
+        "sub-header": "Take action now.",
+        "desc": "You can give information about this formation to individuals in need around you. You can be a local supporter of this project in your region. If you have a 3D printer, you can support by printing for the demands in your city."
       }
     }
   }
