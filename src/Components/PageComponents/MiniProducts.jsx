@@ -69,12 +69,12 @@ export default function MiniProducts() {
               <button
                 type="button"
                 onClick={() => updateCart(product)}
-                className="p-3 active:scale-75 font-semibold hover:bg-red-200 transition-all duration-200 rounded-lg w-full max-w-[8rem] bg-red-100 text-red-400"
+                className="p-3 active:scale-75 font-semibold hover:bg-red-200 transition-all duration-200 rounded-lg w-full max-w-[8rem] bg-red-100 text-brand-red"
               >
                 {t('buttons.add-to-cart')}
               </button>
               <Link
-                className="self-center text-red-400 hover:underline text-sm"
+                className="self-center text-brand-red hover:underline text-sm"
                 to={`/products/${product.productSlug}`}
               >
                 {t('buttons.see-details')}
@@ -90,7 +90,7 @@ export default function MiniProducts() {
     <div className="font-pop w-full grid grid-cols-1 p-5 py-16 place-content-start place-items-center">
       <div className="w-full max-w-7xl grid grid-cols-1 place-content-start place-items-center">
         <div className="text-center w-full gap-16 grid grid-cols-1 place-content-start place-items-center">
-          <h1 className="p-3 rounded-lg w-full max-w-[15rem] bg-red-100 text-red-400 font-bold text-xl">
+          <h1 className="p-3 rounded-lg w-full max-w-[15rem] bg-red-100 text-brand-red font-bold text-xl">
             {t('pages.homepage.products.our-products')}
           </h1>
           {products}

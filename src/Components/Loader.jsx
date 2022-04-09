@@ -17,7 +17,7 @@ export default function Loader() {
 
   return (
     <div
-      className={`${loaderStyle} fixed w-screen h-screen z-[99999999999] left-0 top-0 bg-white text-red-500 flex flex-wrap justify-center content-center p-0 m-0`}
+      className={`${loaderStyle} fixed w-screen h-screen z-[99999999999] left-0 top-0 bg-white text-brand-red flex flex-wrap justify-center content-center p-0 m-0`}
     >
       <div className="rounded-full shadow-[0_0px_10px_#de00007c] ">
         <svg
