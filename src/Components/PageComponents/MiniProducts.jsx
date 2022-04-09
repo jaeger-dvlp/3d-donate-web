@@ -2,6 +2,7 @@
 import i18next, { t } from 'i18next';
 import React, { useContext, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import Contents from '../../Content';
 import CartContext from '../../Contexts/CartContext';
 import Images from '../../Images';
 
@@ -94,6 +95,12 @@ export default function MiniProducts() {
             {t('pages.homepage.products.our-products')}
           </h1>
           {products}
+          <Link
+            to={Contents.header.products.links[i18next.language]}
+            className="p-2 active:scale-75 flex mt-3 justify-center gap-1 text-center px-4 min-w-[6rem] transition-all duration-150 rounded-md hover:bg-red-200 bg-[#FFE7E7] text-brand-red"
+          >
+            {t('buttons.see-all')}
+          </Link>
         </div>
       </div>
     </div>
