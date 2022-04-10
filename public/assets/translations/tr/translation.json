@@ -3,7 +3,8 @@
     "add-to-cart": "Sepete Ekle",
     "see-details": "Detaylı Gör",
     "download-pdf": "PDF İndir",
-    "see-all": "Tümünü Gör"
+    "see-all": "Tümünü Gör",
+    "to-home": "Anasayfaya Dön"
   },
   "components": {
     "cart": {
@@ -48,6 +49,9 @@
           "description": "Girişimlerimizin başarılı olabilmesi için en etkili yolun toplumun aktif bir şekilde bize katılması olduğuna inanıyoruz. Daha fazla bilgi almak için lütfen e-mail ile bize ulaşın."
         }
       ]
+    },
+    "not-found": {
+      "description": "Aradığın sayfayı bulamadık."
     }
   }
 }

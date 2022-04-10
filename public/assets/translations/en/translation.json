@@ -3,7 +3,8 @@
     "add-to-cart": "Add to Cart",
     "see-details": "See Details",
     "download-pdf": "Download PDF",
-    "see-all": "See All"
+    "see-all": "See All",
+    "to-home": "Go to Homepage"
   },
   "components": {
     "cart": {
@@ -48,6 +49,9 @@
           "description": "We believe that the most effective way for our initiatives to be successful is for the community to actively participate in us. For more information, please contact us by e-mail."
         }
       ]
+    },
+    "not-found": {
+      "description": "The page you're looking for is not found."
     }
   }
 }
