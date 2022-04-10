@@ -1,18 +1,23 @@
 /* eslint-disable operator-linebreak */
 /* eslint-disable indent */
 import i18next, { t } from 'i18next';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { FaUser } from 'react-icons/fa';
 import { MdLanguage } from 'react-icons/md';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { IoIosClose } from 'react-icons/io';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 import Images from '../Images';
 import Contents from '../Content';
 
 export default function Header() {
+  const pathname = useLocation();
   const [mobileMenu, setMobileMenu] = useState(false);
+
+  useEffect(() => {
+    setMobileMenu(false);
+  }, [pathname]);
 
   return (
     <div className="w-full fixed left-0 top-0 font-pop flex flex-wrap justify-center content-start  bg-white border-b-4 border-b-red-400 shadow-xl p-5 xl:py-5 lg:py-5 py-2">
@@ -66,12 +71,11 @@ export default function Header() {
               <div className="text-sm border-2 border-red-400/70 grid grid-cols-1 place-content-start place-items-start w-full rounded-md overflow-hidden p-0">
                 <a
                   href={
-                    i18next.language === 'tr' ||
-                    window.location.pathname.slice(0, 3) === '/tr'
-                      ? window.location.pathname.slice(
+                    window.location.href.includes('/tr')
+                      ? `${window.location.pathname.slice(
                           3,
                           window.location.pathname.length,
-                        ) || '/'
+                        )}`
                       : `/tr${window.location.pathname}`
                   }
                   className="p-1 w-full text-center transition-all duration-150 hover:bg-red-200 bg-white text-brand-red"
@@ -143,12 +147,11 @@ export default function Header() {
           <div className="py-2" />
           <a
             href={
-              i18next.language === 'tr' ||
-              window.location.pathname.slice(0, 3) === '/tr'
-                ? window.location.pathname.slice(
+              window.location.href.includes('/tr')
+                ? `${window.location.pathname.slice(
                     3,
                     window.location.pathname.length,
-                  ) || '/'
+                  )}`
                 : `/tr${window.location.pathname}`
             }
             className="p-1 text-center active:scale-75 px-4 w-full transition-all duration-150 rounded-md hover:bg-red-200 bg-[#FFE7E7] text-brand-red"
