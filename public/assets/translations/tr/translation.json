@@ -12,7 +12,8 @@
     }
   },
   "labels": {
-    "cart-empty": "Sepetiniz boş."
+    "cart-empty": "Sepetiniz boş.",
+    "contact-us": "İletişim"
   },
   "header": {
     "homepage": "Anasayfa",

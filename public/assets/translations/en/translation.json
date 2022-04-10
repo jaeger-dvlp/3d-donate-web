@@ -12,7 +12,8 @@
     }
   },
   "labels": {
-    "cart-empty": "Your cart is empty."
+    "cart-empty": "Your cart is empty.",
+    "contact-us": "Contact Us"
   },
   "header": {
     "homepage": "Homepage",
