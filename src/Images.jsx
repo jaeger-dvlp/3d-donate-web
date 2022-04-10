@@ -10,6 +10,8 @@ import MockProduct1 from './img/products/mockproduct1.jpg';
 import MockProduct2 from './img/products/mockproduct2.jpg';
 import MockProduct3 from './img/products/mockproduct3.jpg';
 
+import page404 from './img/mix/404.svg';
+
 const Images = {
   Logo,
   Homebanner,
@@ -19,6 +21,7 @@ const Images = {
   MockProduct1,
   MockProduct2,
   MockProduct3,
+  page404,
 };
 
 export default Images;
