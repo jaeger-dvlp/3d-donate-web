@@ -5,8 +5,11 @@ import Header from './Components/Header';
 import Loader from './Components/Loader';
 import { CartContextProvider } from './Contexts/CartContext';
 import Homepage from './Pages/Homepage';
+import NotFound from './Pages/NotFound';
+import Products from './Pages/Products';
 
 function App() {
+  const lang = '/:lang(en|tr)?';
   return (
     <CartContextProvider>
       <Router>
@@ -14,9 +17,9 @@ function App() {
         <Header />
         <Cart />
         <Switch>
-          <Route path={['/tr', '/en', '/']}>
-            <Homepage />
-          </Route>
+          <Route exact path={lang} component={Homepage} />
+          <Route exact path={`${lang}/products`} component={Products} />
+          <Route exact path={`${lang}/*`} component={NotFound} />
         </Switch>
       </Router>
     </CartContextProvider>
