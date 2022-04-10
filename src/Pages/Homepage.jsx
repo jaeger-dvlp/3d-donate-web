@@ -5,6 +5,7 @@ import { MdOutlineFileDownload } from 'react-icons/md';
 
 import Images from '../Images';
 import MiniProducts from '../Components/PageComponents/MiniProducts';
+import ContactForm from '../Components/PageComponents/ContactForm';
 
 export default function Homepage() {
   return (
@@ -119,6 +120,7 @@ export default function Homepage() {
           </div>
         </div>
       </div>
+      <ContactForm />
     </>
   );
 }
