@@ -4,7 +4,8 @@
     "see-details": "See Details",
     "download-pdf": "Download PDF",
     "see-all": "See All",
-    "to-home": "Go to Homepage"
+    "to-home": "Go to Homepage",
+    "send": "Send"
   },
   "components": {
     "cart": {
@@ -14,6 +15,36 @@
   "labels": {
     "cart-empty": "Your cart is empty.",
     "contact-us": "Contact Us"
+  },
+  "forms": {
+    "contact-form": {
+      "info-column": {
+        "header": "Contact Form",
+        "description": "You can contact us and provide support by using our filling the contact form."
+      },
+      "inputs": {
+        "emailAddress": {
+          "label": "E-Mail Address",
+          "placeholder": "example@mail.com"
+        },
+        "fullName": {
+          "label": "Name & Surname",
+          "placeholder": "John Doe"
+        },
+        "phoneNumber": {
+          "label": "Phone Number",
+          "placeholder": "e.g. 999-999-9999"
+        },
+        "personAddress": {
+          "label": "Address",
+          "placeholder": "e.g. Berlin / Germany"
+        },
+        "formMessage": {
+          "label": "Message",
+          "placeholder": "We listening to you..."
+        }
+      }
+    }
   },
   "header": {
     "homepage": "Homepage",

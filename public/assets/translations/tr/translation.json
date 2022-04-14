@@ -4,7 +4,8 @@
     "see-details": "Detaylı Gör",
     "download-pdf": "PDF İndir",
     "see-all": "Tümünü Gör",
-    "to-home": "Anasayfaya Dön"
+    "to-home": "Anasayfaya Dön",
+    "send": "Gönder"
   },
   "components": {
     "cart": {
@@ -14,6 +15,36 @@
   "labels": {
     "cart-empty": "Sepetiniz boş.",
     "contact-us": "İletişim"
+  },
+  "forms": {
+    "contact-form": {
+      "info-column": {
+        "header": "İletişim Formu",
+        "description": "İletişim formumuzu doldurarak bizimle iletişime geçebilir ve destek sağlayabilirsiniz."
+      },
+      "inputs": {
+        "emailAddress": {
+          "label": "E-Posta Adresi",
+          "placeholder": "ornek@mail.com"
+        },
+        "fullName": {
+          "label": "İsim & Soyisim",
+          "placeholder": "Ahmet Sezgin"
+        },
+        "phoneNumber": {
+          "label": "Telefon Numarası",
+          "placeholder": "örn. 532-532-5323"
+        },
+        "personAddress": {
+          "label": "Adres",
+          "placeholder": "örn. Ankara / Türkiye"
+        },
+        "formMessage": {
+          "label": "Mesaj",
+          "placeholder": "Seni dinliyoruz.."
+        }
+      }
+    }
   },
   "header": {
     "homepage": "Anasayfa",
