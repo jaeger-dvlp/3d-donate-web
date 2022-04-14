@@ -1,17 +1,40 @@
+/* eslint-disable implicit-arrow-linebreak */
 import { t } from 'i18next';
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
 import { FiMail } from 'react-icons/fi';
 import { BsFillTelephoneFill } from 'react-icons/bs';
 import { FaMapMarkerAlt } from 'react-icons/fa';
+import { BiMailSend } from 'react-icons/bi';
 
 export default function ContactForm() {
+  const contactForm = useRef();
+  const [contactDetails, setContactDetails] = useState({
+    fullName: '',
+    emailAddress: '',
+    phoneNumber: '',
+    personAddress: '',
+    formMessage: '',
+  });
+
+  const submitContactForm = (e) => {
+    e.preventDefault();
+    // axios.post etc.
+  };
+
+  useEffect(() => {
+    contactForm.current.addEventListener('submit', submitContactForm);
+
+    return () =>
+      contactForm.current.removeEventListener('submit', submitContactForm);
+  }, [contactDetails]);
+
   return (
-    <div className="w-full font-pop grid grid-cols-1 gap-16 py-16 px-5 bg-white place-content-start place-items-center">
+    <div className="w-full !z-1 font-pop grid grid-cols-1 gap-16 py-16 px-5 bg-white place-content-start place-items-center">
       <h1 className="p-3 text-center rounded-lg w-full max-w-[15rem] bg-red-100 text-brand-red font-bold text-xl">
         {t('labels.contact-us')}
       </h1>
-      <div className="w-full relative overflow-hidden max-w-4xl grid grid-cols-6 place-items-start place-content-start gap-0 rounded-xl border-brand-red border-2 shadow-xl">
+      <div className="w-full relative overflow-hidden xl:max-w-4xl lg:max-w-4xl max-w-md grid grid-cols-6 place-items-start place-content-start gap-0 rounded-xl border-brand-red border-2 shadow-xl">
         <div className="w-full xl:py-10 lg:py-10 p-5 grid grid-cols-1 place-content-start place-items-start gap-3 bg-red-50 !h-full xl:col-span-2 lg:col-span-2 col-span-full xl:border-r-2 lg:border-r-2 xl:border-b-0 lg:border-b-0 border-r-0 border-b-2 border-brand-red">
           <h1 className="text-xl font-semibold text-brand-red ">
             Contact Information
@@ -45,8 +68,105 @@ export default function ContactForm() {
             </span>
           </div>
         </div>
-        <div className="w-full h-full xl:col-span-4 lg:col-span-4 col-span-full bg-white p-5 xl:py-10 lg:py-10">
-          x
+        <div className="w-full xl:max-w-full lg:max-w-full max-w-md grid grid-cols-1 xl:col-span-4 lg:col-span-4 col-span-full ">
+          <form
+            ref={contactForm}
+            className="w-full grid xl:grid-cols-2 lg:grid-cols-2 grid-cols-1 gap-5 bg-white p-5 xl:py-10 lg:py-10"
+          >
+            <div className="w-full grid grid-cols-1 gap-2 place-content-start place-items-start">
+              <span className="text-zinc-600 text-sm">E-Mail</span>
+              <input
+                className="w-full border !outline-none ring-brand-red/30 focus:ring-4 ring-0  border-brand-red/70 text-sm placeholder:text-zinc-400/70 text-zinc-600 p-2 rounded-md"
+                placeholder="example@mail.com"
+                type="email"
+                name="email"
+                required
+                onChange={(e) => {
+                  setContactDetails({
+                    ...contactDetails,
+                    emailAddress: e.target.value,
+                  });
+                }}
+                value={contactDetails.emailAddress}
+              />
+            </div>
+            <div className="w-full grid grid-cols-1 gap-2 place-content-start place-items-start">
+              <span className="text-zinc-600 text-sm">Name & Surname</span>
+              <input
+                className="w-full border !outline-none ring-brand-red/30 focus:ring-4 ring-0  border-brand-red/70 text-sm placeholder:text-zinc-400/70 text-zinc-600 p-2 rounded-md"
+                placeholder="John Doe"
+                type="text"
+                name="name"
+                required
+                onChange={(e) => {
+                  setContactDetails({
+                    ...contactDetails,
+                    fullName: e.target.value,
+                  });
+                }}
+                value={contactDetails.fullName}
+              />
+            </div>
+            <div className="w-full grid grid-cols-1 gap-2 place-content-start place-items-start">
+              <span className="text-zinc-600 text-sm">Phone Number</span>
+              <input
+                className="w-full border !outline-none ring-brand-red/30 focus:ring-4 ring-0  border-brand-red/70 text-sm placeholder:text-zinc-400/70 text-zinc-600 p-2 rounded-md"
+                placeholder="e.g. 999-999-9999"
+                type="tel"
+                name="phone"
+                required
+                onChange={(e) => {
+                  setContactDetails({
+                    ...contactDetails,
+                    phoneNumber: e.target.value,
+                  });
+                }}
+                value={contactDetails.phoneNumber}
+              />
+            </div>
+            <div className="w-full grid grid-cols-1 gap-2 place-content-start place-items-start">
+              <span className="text-zinc-600 text-sm">Address</span>
+              <input
+                className="w-full border !outline-none ring-brand-red/30 focus:ring-4 ring-0  border-brand-red/70 text-sm placeholder:text-zinc-400/70 text-zinc-600 p-2 rounded-md"
+                placeholder="e.g. Berlin / Germany"
+                type="text"
+                name="address"
+                required
+                onChange={(e) => {
+                  setContactDetails({
+                    ...contactDetails,
+                    personAddress: e.target.value,
+                  });
+                }}
+                value={contactDetails.personAddress}
+              />
+            </div>
+            <div className="w-full grid grid-cols-1 gap-2 col-span-full place-content-start place-items-start">
+              <span className="text-zinc-600 text-sm">Message</span>
+              <textarea
+                className="w-full border !outline-none min-h-[8rem] ring-brand-red/30 focus:ring-4 ring-0  border-brand-red/70 text-sm placeholder:text-zinc-400/70 text-zinc-600 p-2 rounded-md"
+                placeholder="We listening to you..."
+                name="message"
+                required
+                onChange={(e) => {
+                  setContactDetails({
+                    ...contactDetails,
+                    formMessage: e.target.value,
+                  });
+                }}
+                value={contactDetails.formMessage}
+              />
+            </div>
+            <div className="w-full col-span-full">
+              <button
+                type="submit"
+                className="bg-brand-red hover:bg-brand-red/70 transition-all duration-200 active:scale-90 !outline-none focus:ring-4 ring-brand-red/30 ring-0 flex justify-center flex-nowrap gap-1 place-items-center p-2 rounded-md text-white w-full max-w-[7rem]"
+              >
+                <span>Send</span>
+                <BiMailSend className="text-xl" />
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </div>
