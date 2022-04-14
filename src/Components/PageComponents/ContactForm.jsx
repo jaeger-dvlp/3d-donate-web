@@ -37,11 +37,10 @@ export default function ContactForm() {
       <div className="w-full relative overflow-hidden xl:max-w-4xl lg:max-w-4xl max-w-md grid grid-cols-6 place-items-start place-content-start gap-0 rounded-xl border-brand-red border-2 shadow-xl">
         <div className="w-full xl:py-10 lg:py-10 p-5 grid grid-cols-1 place-content-start place-items-start gap-3 bg-red-50 !h-full xl:col-span-2 lg:col-span-2 col-span-full xl:border-r-2 lg:border-r-2 xl:border-b-0 lg:border-b-0 border-r-0 border-b-2 border-brand-red">
           <h1 className="text-xl font-semibold text-brand-red ">
-            Contact Information
+            {t('forms.contact-form.info-column.header')}
           </h1>
           <p className="text-left text-sm text-zinc-500">
-            You can contact us and provide support by using our filling the
-            contact form.
+            {t('forms.contact-form.info-column.description')}
           </p>
           <div className="w-full mt-10 flex justify-start content-center gap-x-2">
             <BsFillTelephoneFill className="p-2 self-center text-3xl bg-red-100 rounded-md text-brand-red" />
@@ -71,13 +70,17 @@ export default function ContactForm() {
         <div className="w-full xl:max-w-full lg:max-w-full max-w-md grid grid-cols-1 xl:col-span-4 lg:col-span-4 col-span-full ">
           <form
             ref={contactForm}
-            className="w-full grid xl:grid-cols-2 lg:grid-cols-2 grid-cols-1 gap-5 bg-white p-5 xl:py-10 lg:py-10"
+            className="w-full grid xl:grid-cols-2 lg:grid-cols-2 grid-cols-1 gap-5 bg-white xl:p-10 lg:p-10 p-5"
           >
             <div className="w-full grid grid-cols-1 gap-2 place-content-start place-items-start">
-              <span className="text-zinc-600 text-sm">E-Mail</span>
+              <span className="text-zinc-600 text-sm">
+                {t('forms.contact-form.inputs.emailAddress.label')}
+              </span>
               <input
                 className="w-full border !outline-none ring-brand-red/30 focus:ring-4 ring-0  border-brand-red/70 text-sm placeholder:text-zinc-400/70 text-zinc-600 p-2 rounded-md"
-                placeholder="example@mail.com"
+                placeholder={t(
+                  'forms.contact-form.inputs.emailAddress.placeholder',
+                )}
                 type="email"
                 name="email"
                 required
@@ -91,10 +94,14 @@ export default function ContactForm() {
               />
             </div>
             <div className="w-full grid grid-cols-1 gap-2 place-content-start place-items-start">
-              <span className="text-zinc-600 text-sm">Name & Surname</span>
+              <span className="text-zinc-600 text-sm">
+                {t('forms.contact-form.inputs.fullName.label')}
+              </span>
               <input
                 className="w-full border !outline-none ring-brand-red/30 focus:ring-4 ring-0  border-brand-red/70 text-sm placeholder:text-zinc-400/70 text-zinc-600 p-2 rounded-md"
-                placeholder="John Doe"
+                placeholder={t(
+                  'forms.contact-form.inputs.fullName.placeholder',
+                )}
                 type="text"
                 name="name"
                 required
@@ -108,10 +115,14 @@ export default function ContactForm() {
               />
             </div>
             <div className="w-full grid grid-cols-1 gap-2 place-content-start place-items-start">
-              <span className="text-zinc-600 text-sm">Phone Number</span>
+              <span className="text-zinc-600 text-sm">
+                {t('forms.contact-form.inputs.phoneNumber.label')}
+              </span>
               <input
                 className="w-full border !outline-none ring-brand-red/30 focus:ring-4 ring-0  border-brand-red/70 text-sm placeholder:text-zinc-400/70 text-zinc-600 p-2 rounded-md"
-                placeholder="e.g. 999-999-9999"
+                placeholder={t(
+                  'forms.contact-form.inputs.phoneNumber.placeholder',
+                )}
                 type="tel"
                 name="phone"
                 required
@@ -125,10 +136,14 @@ export default function ContactForm() {
               />
             </div>
             <div className="w-full grid grid-cols-1 gap-2 place-content-start place-items-start">
-              <span className="text-zinc-600 text-sm">Address</span>
+              <span className="text-zinc-600 text-sm">
+                {t('forms.contact-form.inputs.personAddress.placeholder')}
+              </span>
               <input
                 className="w-full border !outline-none ring-brand-red/30 focus:ring-4 ring-0  border-brand-red/70 text-sm placeholder:text-zinc-400/70 text-zinc-600 p-2 rounded-md"
-                placeholder="e.g. Berlin / Germany"
+                placeholder={t(
+                  'forms.contact-form.inputs.personAddress.placeholder',
+                )}
                 type="text"
                 name="address"
                 required
@@ -142,10 +157,14 @@ export default function ContactForm() {
               />
             </div>
             <div className="w-full grid grid-cols-1 gap-2 col-span-full place-content-start place-items-start">
-              <span className="text-zinc-600 text-sm">Message</span>
+              <span className="text-zinc-600 text-sm">
+                {t('forms.contact-form.inputs.formMessage.label')}
+              </span>
               <textarea
                 className="w-full border !outline-none min-h-[8rem] ring-brand-red/30 focus:ring-4 ring-0  border-brand-red/70 text-sm placeholder:text-zinc-400/70 text-zinc-600 p-2 rounded-md"
-                placeholder="We listening to you..."
+                placeholder={t(
+                  'forms.contact-form.inputs.formMessage.placeholder',
+                )}
                 name="message"
                 required
                 onChange={(e) => {
@@ -160,10 +179,10 @@ export default function ContactForm() {
             <div className="w-full col-span-full">
               <button
                 type="submit"
-                className="bg-brand-red hover:bg-brand-red/70 transition-all duration-200 active:scale-90 !outline-none focus:ring-4 ring-brand-red/30 ring-0 flex justify-center flex-nowrap gap-1 place-items-center p-2 rounded-md text-white w-full max-w-[7rem]"
+                className="bg-brand-red hover:bg-brand-red/70 transition-all duration-200 active:scale-90 !outline-none focus:ring-4 ring-brand-red/30 ring-0 flex justify-center flex-nowrap gap-1 place-items-center p-2 rounded-md text-white w-full max-w-[9rem]"
               >
-                <span>Send</span>
-                <BiMailSend className="text-xl" />
+                <span>{t('buttons.send')}</span>
+                <BiMailSend className="text-xl p-0 m-0" />
               </button>
             </div>
           </form>
