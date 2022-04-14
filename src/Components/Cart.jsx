@@ -50,7 +50,7 @@ export default function Cart() {
   }
 
   return (
-    <div className="fixed right-5 bottom-5">
+    <div className="fixed z-10 right-5 bottom-5">
       <div
         className={`absolute ${
           cartActivity
@@ -75,7 +75,7 @@ export default function Cart() {
       <button
         type="button"
         onClick={() => setCartActivity(cartActivity ? false : true)}
-        className="p-3 overflow-hidden active:scale-50 xl:w-16 xl:h-16 lg:w-16 lg:h-16 flex flex-wrap justify-center content-center z-[20] bg-white border-2 rounded-2xl border-red-300 hover:bg-red-50 transition-all duration-200 shadow-lg text-brand-red fixed bottom-5 right-5"
+        className="p-3 z-10 overflow-hidden active:scale-50 xl:w-16 xl:h-16 lg:w-16 lg:h-16 flex flex-wrap justify-center content-center bg-white border-2 rounded-2xl border-red-300 hover:bg-red-50 transition-all duration-200 shadow-lg text-brand-red fixed bottom-5 right-5"
       >
         <BsCart2
           className={`${
