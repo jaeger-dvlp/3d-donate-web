@@ -31,13 +31,13 @@ export default function Cart() {
           </h2>
           <div className="col-span-full grid grid-cols-2 gap-x-3">
             <button
-              className="w-full flex justify-center text-center transition-all duration-150 hover:bg-green-200 active:scale-75 bg-green-100 rounded-lg p-2 text-green-400"
+              className="w-full flex justify-center text-center transition-all duration-150 hover:bg-green-200 active:scale-90 bg-green-100 rounded-lg p-2 text-green-400"
               type="button"
             >
               <BsCheckLg className="self-center" />
             </button>
             <button
-              className="w-full flex justify-center text-center transition-all duration-150 hover:bg-zinc-200 active:scale-75 bg-zinc-100 rounded-lg p-2 text-zinc-400"
+              className="w-full flex justify-center text-center transition-all duration-150 hover:bg-zinc-200 active:scale-90 bg-zinc-100 rounded-lg p-2 text-zinc-400"
               type="button"
               onClick={() => setMyCart(null)}
             >
@@ -75,7 +75,7 @@ export default function Cart() {
       <button
         type="button"
         onClick={() => setCartActivity(cartActivity ? false : true)}
-        className="p-3 z-10 overflow-hidden active:scale-50 xl:w-16 xl:h-16 lg:w-16 lg:h-16 flex flex-wrap justify-center content-center bg-white border-2 rounded-2xl border-red-300 hover:bg-red-50 transition-all duration-200 shadow-lg text-brand-red fixed bottom-5 right-5"
+        className="p-3 z-10 overflow-hidden active:scale-90 xl:w-16 xl:h-16 lg:w-16 lg:h-16 flex flex-wrap justify-center content-center bg-white border-2 rounded-2xl border-red-300 hover:bg-red-50 transition-all duration-200 shadow-lg text-brand-red fixed bottom-5 right-5"
       >
         <BsCart2
           className={`${
