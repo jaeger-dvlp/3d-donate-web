@@ -20,7 +20,7 @@ export default function Header() {
   }, [pathname]);
 
   return (
-    <div className="w-full fixed left-0 top-0 font-pop flex flex-wrap justify-center content-start  bg-white border-b-4 border-b-red-400 shadow-xl p-5 xl:py-5 lg:py-5 py-2">
+    <div className="w-full z-10 fixed left-0 top-0 font-pop flex flex-wrap justify-center content-start  bg-white border-b-4 border-b-red-400 shadow-xl p-5 xl:py-5 lg:py-5 py-2">
       <div className="w-full max-w-7xl flex justify-between">
         <div className="logo-container">
           <a href="/" className=" group ">
