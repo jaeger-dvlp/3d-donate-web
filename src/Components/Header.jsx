@@ -1,7 +1,7 @@
 /* eslint-disable operator-linebreak */
 /* eslint-disable indent */
 import i18next, { t } from 'i18next';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { FaUser } from 'react-icons/fa';
 import { MdLanguage } from 'react-icons/md';
 import { GiHamburgerMenu } from 'react-icons/gi';
@@ -14,13 +14,29 @@ import Contents from '../Content';
 export default function Header() {
   const pathname = useLocation();
   const [mobileMenu, setMobileMenu] = useState(false);
-
+  const appHeader = useRef();
   useEffect(() => {
+    window.addEventListener('scroll', () => {
+      if (
+        window.scrollY >= 100 &&
+        !appHeader.current.classList.contains('xl:!py-2', 'lg:!py-2')
+      ) {
+        appHeader.current.classList.add('xl:!py-2', 'lg:!py-2');
+      } else if (
+        window.scrollY < 100 &&
+        appHeader.current.classList.contains('xl:!py-2', 'lg:!py-2')
+      ) {
+        appHeader.current.classList.remove('xl:!py-2', 'lg:!py-2');
+      }
+    });
     setMobileMenu(false);
   }, [pathname]);
 
   return (
-    <div className="w-full z-10 fixed left-0 top-0 font-pop flex flex-wrap justify-center content-start  bg-white border-b-4 border-b-red-400 shadow-xl p-5 xl:py-5 lg:py-5 py-2">
+    <div
+      ref={appHeader}
+      className="w-full transition-all duration-200 z-10 fixed left-0 top-0 font-pop flex flex-wrap justify-center content-start  bg-white border-b-4 border-b-red-400 shadow-xl p-5 xl:py-5 lg:py-5 py-2"
+    >
       <div className="w-full max-w-7xl flex justify-between">
         <div className="logo-container">
           <a href="/" className=" group ">
