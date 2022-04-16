@@ -5,7 +5,7 @@ import Images from '../Images';
 
 export default function NotFound() {
   return (
-    <div className="w-full font-pop min-h-screen grid grid-cols-1 gap-3 place-content-center place-items-center p-5">
+    <div className="w-full font-pop min-h-screen grid grid-cols-1 gap-3 place-content-center place-items-center pt-32 p-5">
       <img
         src={Images.page404}
         alt="3D Donate 404"
