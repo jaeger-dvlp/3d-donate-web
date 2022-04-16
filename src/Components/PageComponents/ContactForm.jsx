@@ -137,7 +137,7 @@ export default function ContactForm() {
             </div>
             <div className="w-full grid grid-cols-1 gap-2 place-content-start place-items-start">
               <span className="text-zinc-600 text-sm">
-                {t('forms.contact-form.inputs.personAddress.placeholder')}
+                {t('forms.contact-form.inputs.personAddress.label')}
               </span>
               <input
                 className="w-full border !outline-none ring-brand-red/30 focus:ring-4 ring-0  border-brand-red/70 text-sm placeholder:text-zinc-400/70 text-zinc-600 p-2 rounded-md"
