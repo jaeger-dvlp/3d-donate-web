@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Cart from './Components/Cart';
+import Footer from './Components/Footer';
 import Header from './Components/Header';
 import Loader from './Components/Loader';
 import { CartContextProvider } from './Contexts/CartContext';
@@ -21,6 +22,7 @@ function App() {
           <Route exact path={`${lang}/products`} component={Products} />
           <Route exact path={`${lang}/*`} component={NotFound} />
         </Switch>
+        <Footer />
       </Router>
     </CartContextProvider>
   );
