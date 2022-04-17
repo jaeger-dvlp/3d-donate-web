@@ -62,7 +62,7 @@ export default function Homepage() {
             <a
               download
               href="x"
-              className="p-2 active:scale-75 flex mt-3 justify-center gap-1 text-center px-4 min-w-[6rem] transition-all duration-150 rounded-md hover:bg-brand-red/20 bg-brand-red/10 text-brand-red"
+              className="p-2 active:scale-90 flex mt-3 justify-center gap-1 text-center px-4 min-w-[6rem] transition-all duration-150 rounded-md hover:bg-brand-red/20 bg-brand-red/10 text-brand-red"
             >
               {t('buttons.download-pdf')}
               <MdOutlineFileDownload className="self-center" />
@@ -87,7 +87,7 @@ export default function Homepage() {
             <a
               download
               href="x"
-              className="p-2 active:scale-75 flex mt-3 justify-center gap-1 text-center px-4 min-w-[6rem] transition-all duration-150 rounded-md hover:bg-brand-red/20 bg-brand-red/10 text-brand-red"
+              className="p-2 active:scale-90 flex mt-3 justify-center gap-1 text-center px-4 min-w-[6rem] transition-all duration-150 rounded-md hover:bg-brand-red/20 bg-brand-red/10 text-brand-red"
             >
               {t('buttons.download-pdf')}
               <MdOutlineFileDownload className="self-center" />
@@ -112,7 +112,7 @@ export default function Homepage() {
             <a
               download
               href="x"
-              className="p-2 active:scale-75 flex mt-3 justify-center gap-1 text-center px-4 min-w-[6rem] transition-all duration-150 rounded-md hover:bg-brand-red/20 bg-brand-red/10 text-brand-red"
+              className="p-2 active:scale-90 flex mt-3 justify-center gap-1 text-center px-4 min-w-[6rem] transition-all duration-150 rounded-md hover:bg-brand-red/20 bg-brand-red/10 text-brand-red"
             >
               {t('buttons.download-pdf')}
               <MdOutlineFileDownload className="self-center" />
