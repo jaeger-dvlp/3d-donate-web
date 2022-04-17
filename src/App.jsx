@@ -4,6 +4,7 @@ import Cart from './Components/Cart';
 import Footer from './Components/Footer';
 import Header from './Components/Header';
 import Loader from './Components/Loader';
+import Popup from './Components/Popup';
 import { MainContextProvider } from './Contexts/MainContext';
 import Homepage from './Pages/Homepage';
 import NotFound from './Pages/NotFound';
@@ -17,6 +18,7 @@ function App() {
         <Loader />
         <Header />
         <Cart />
+        <Popup />
         <Switch>
           <Route exact path={lang} component={Homepage} />
           <Route exact path={`${lang}/products`} component={Products} />
