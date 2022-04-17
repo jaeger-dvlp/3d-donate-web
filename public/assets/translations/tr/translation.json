@@ -5,7 +5,11 @@
     "download-pdf": "PDF İndir",
     "see-all": "Tümünü Gör",
     "to-home": "Anasayfaya Dön",
-    "send": "Gönder"
+    "send": "Gönder",
+    "okay": "Tamam"
+  },
+  "errors": {
+    "max-cart-one": "Sepetinize en fazla 1 ürün ekleyebilirsiniz."
   },
   "components": {
     "cart": {

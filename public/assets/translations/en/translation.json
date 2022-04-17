@@ -5,7 +5,11 @@
     "download-pdf": "Download PDF",
     "see-all": "See All",
     "to-home": "Go to Homepage",
-    "send": "Send"
+    "send": "Send",
+    "okay": "Okay"
+  },
+  "errors": {
+    "max-cart-one": "You can add only 1 product to your cart."
   },
   "components": {
     "cart": {
