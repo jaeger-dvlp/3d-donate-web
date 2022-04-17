@@ -5,11 +5,11 @@ import React, { useContext, useEffect, useState } from 'react';
 
 import { BsCart2, BsCheckLg, BsTrashFill } from 'react-icons/bs';
 import { IoIosClose } from 'react-icons/io';
-import CartContext from '../Contexts/CartContext';
+import MainContext from '../Contexts/MainContext';
 
 export default function Cart() {
   const [cartActivity, setCartActivity] = useState(false);
-  const { myCart, setMyCart } = useContext(CartContext);
+  const { myCart, setMyCart } = useContext(MainContext);
 
   useEffect(() => {
     if (!cartActivity && myCart) {

@@ -2,7 +2,7 @@
 import i18next, { t } from 'i18next';
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
-import CartContext from '../Contexts/CartContext';
+import CartContext from '../Contexts/MainContext';
 
 export default function ProductCard({ incomingProduct }) {
   const { myCart, setMyCart } = useContext(CartContext);

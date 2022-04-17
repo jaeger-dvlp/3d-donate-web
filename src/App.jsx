@@ -4,7 +4,7 @@ import Cart from './Components/Cart';
 import Footer from './Components/Footer';
 import Header from './Components/Header';
 import Loader from './Components/Loader';
-import { CartContextProvider } from './Contexts/CartContext';
+import { MainContextProvider } from './Contexts/MainContext';
 import Homepage from './Pages/Homepage';
 import NotFound from './Pages/NotFound';
 import Products from './Pages/Products';
@@ -12,7 +12,7 @@ import Products from './Pages/Products';
 function App() {
   const lang = '/:lang(en|tr)?';
   return (
-    <CartContextProvider>
+    <MainContextProvider>
       <Router>
         <Loader />
         <Header />
@@ -24,7 +24,7 @@ function App() {
         </Switch>
         <Footer />
       </Router>
-    </CartContextProvider>
+    </MainContextProvider>
   );
 }
 

@@ -1,14 +1,14 @@
 /* eslint-disable react/prop-types */
 import React, { createContext, useMemo, useState } from 'react';
 
-const CartContext = createContext();
+const MainContext = createContext();
 
-export function CartContextProvider({ children }) {
+export function MainContextProvider({ children }) {
   const [myCart, setMyCart] = useState(null);
 
   const value = useMemo(() => ({ myCart, setMyCart }));
 
-  return <CartContext.Provider value={value}>{children}</CartContext.Provider>;
+  return <MainContext.Provider value={value}>{children}</MainContext.Provider>;
 }
 
-export default CartContext;
+export default MainContext;
