@@ -94,7 +94,7 @@ export default function Header() {
                         )}`
                       : `/tr${window.location.pathname}`
                   }
-                  className="p-1 w-full text-center transition-all duration-150 hover:bg-brand-red/20 bg-white text-brand-red"
+                  className="p-1 w-full text-center transition-all duration-150 hover:underline bg-white text-brand-red"
                 >
                   {i18next.language === 'tr' ? 'EN' : 'TR'}
                 </a>
