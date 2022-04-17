@@ -1,3 +1,4 @@
+/* eslint-disable object-curly-newline */
 /* eslint-disable react/prop-types */
 import i18next, { t } from 'i18next';
 import React, { useContext } from 'react';
@@ -5,12 +6,12 @@ import { Link } from 'react-router-dom';
 import CartContext from '../Contexts/MainContext';
 
 export default function ProductCard({ incomingProduct }) {
-  const { myCart, setMyCart } = useContext(CartContext);
+  const { myCart, setMyCart, popup, setPopup } = useContext(CartContext);
   const updateCart = (product) => {
     if (!myCart) {
       setMyCart(product);
     } else {
-      // Activate popup etc.
+      setPopup({ ...popup, isVisible: true, text: t('errors.max-cart-one') });
     }
   };
 
