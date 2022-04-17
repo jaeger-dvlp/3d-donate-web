@@ -34,7 +34,7 @@ export default function ProductCard({ incomingProduct }) {
         <button
           type="button"
           onClick={() => updateCart(incomingProduct)}
-          className="p-3 active:scale-75 font-semibold hover:bg-red-200 transition-all duration-200 rounded-lg w-full max-w-[8rem] bg-red-100 text-brand-red"
+          className="p-3 active:scale-75 font-semibold hover:bg-brand-red/20 transition-all duration-200 rounded-lg w-full max-w-[8rem] bg-brand-red/10 text-brand-red"
         >
           {t('buttons.add-to-cart')}
         </button>

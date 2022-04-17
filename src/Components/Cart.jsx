@@ -58,7 +58,7 @@ export default function Cart() {
             : 'scale-0 opacity-0 invisible translate-y-[70%] translate-x-16'
         } font-pop right-0 z-[19] p-5 py-4 grid grid-cols-1 place-content-start min-h-[14rem] w-full min-w-[14rem] place-items-start rounded-xl shadow-lg transition-all duration-300 bg-white xl:bottom-20 lg:bottom-20 bottom-16 border-2 border-red-300 gap-5`}
       >
-        <h1 className="p-3 bg-red-100 rounded-xl w-full text-center  text-brand-red font-bold text-xl">
+        <h1 className="p-3 bg-brand-red/10 rounded-xl w-full text-center  text-brand-red font-bold text-xl">
           {t('components.cart.title')}
         </h1>
         <CartContent />
@@ -75,7 +75,7 @@ export default function Cart() {
       <button
         type="button"
         onClick={() => setCartActivity(cartActivity ? false : true)}
-        className="p-3 z-10 overflow-hidden active:scale-90 xl:w-16 xl:h-16 lg:w-16 lg:h-16 flex flex-wrap justify-center content-center bg-white border-2 rounded-2xl border-red-300 hover:bg-red-50 transition-all duration-200 shadow-lg text-brand-red fixed bottom-5 right-5"
+        className="p-3 z-10 overflow-hidden active:scale-90 xl:w-16 xl:h-16 lg:w-16 lg:h-16 flex flex-wrap justify-center content-center bg-white border-2 rounded-2xl border-red-300 hover:bg-brand-red/10 transition-all duration-200 shadow-lg text-brand-red fixed bottom-5 right-5"
       >
         <BsCart2
           className={`${

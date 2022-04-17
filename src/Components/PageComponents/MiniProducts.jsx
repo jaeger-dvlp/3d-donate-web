@@ -54,13 +54,13 @@ export default function MiniProducts() {
     <div className="font-pop w-full grid grid-cols-1 p-5 py-16 place-content-start place-items-center">
       <div className="w-full max-w-7xl grid grid-cols-1 place-content-start place-items-center">
         <div className="text-center w-full gap-16 grid grid-cols-1 place-content-start place-items-center">
-          <h1 className="p-3 rounded-lg w-full max-w-[15rem] bg-red-100 text-brand-red font-bold text-xl">
+          <h1 className="p-3 rounded-lg w-full max-w-[15rem] bg-brand-red/10 text-brand-red font-bold text-xl">
             {t('pages.homepage.products.our-products')}
           </h1>
           {products}
           <Link
             to={Contents.header.products.links[i18next.language]}
-            className="p-2 active:scale-75 flex mt-3 justify-center gap-1 text-center px-4 min-w-[6rem] transition-all duration-150 rounded-md hover:bg-red-200 bg-[#FFE7E7] text-brand-red"
+            className="p-2 active:scale-75 flex mt-3 justify-center gap-1 text-center px-4 min-w-[6rem] transition-all duration-150 rounded-md hover:bg-brand-red/20 bg-brand-red/10 text-brand-red"
           >
             {t('buttons.see-all')}
           </Link>

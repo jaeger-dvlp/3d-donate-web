@@ -35,7 +35,7 @@ export default function Header() {
   return (
     <div
       ref={appHeader}
-      className="w-full transition-all duration-200 z-10 fixed left-0 top-0 font-pop flex flex-wrap justify-center content-start  bg-white border-b-4 border-b-red-400 shadow-xl p-5 xl:py-5 lg:py-5 py-2"
+      className="w-full transition-all duration-200 z-10 fixed left-0 top-0 font-pop flex flex-wrap justify-center content-start  bg-white border-b-4 border-brand-red/70 shadow-xl p-5 xl:py-5 lg:py-5 py-2"
     >
       <div className="w-full max-w-7xl flex justify-between">
         <div className="logo-container">
@@ -50,37 +50,37 @@ export default function Header() {
         <div className="xl:flex lg:flex hidden flex-wrap content-center justify-end gap-x-5">
           <Link
             to={Contents.header.homepage.links[i18next.language]}
-            className="p-1 text-center active:scale-75 px-4 min-w-[6rem] transition-all duration-150 rounded-md hover:bg-red-200 bg-[#FFE7E7] text-brand-red"
+            className="p-1 text-center active:scale-75 px-4 min-w-[6rem] transition-all duration-150 rounded-md hover:bg-brand-red/20 bg-brand-red/10 text-brand-red"
           >
             {t('header.homepage')}
           </Link>
           <Link
             to={Contents.header.products.links[i18next.language]}
-            className="p-1 text-center active:scale-75 px-4 min-w-[6rem] transition-all duration-150 rounded-md hover:bg-red-200 bg-[#FFE7E7] text-brand-red"
+            className="p-1 text-center active:scale-75 px-4 min-w-[6rem] transition-all duration-150 rounded-md hover:bg-brand-red/20 bg-brand-red/10 text-brand-red"
           >
             {t('header.products')}
           </Link>
           <Link
             to={Contents.header.contact.links[i18next.language]}
-            className="p-1 text-center active:scale-75 px-4 min-w-[6rem] transition-all duration-150 rounded-md hover:bg-red-200 bg-[#FFE7E7] text-brand-red"
+            className="p-1 text-center active:scale-75 px-4 min-w-[6rem] transition-all duration-150 rounded-md hover:bg-brand-red/20 bg-brand-red/10 text-brand-red"
           >
             {t('header.contact')}
           </Link>
           <Link
             to={Contents.header.whatarewedoing.links[i18next.language]}
-            className="p-1 text-center active:scale-75 px-4 min-w-[6rem] transition-all duration-150 rounded-md hover:bg-red-200 bg-[#FFE7E7] text-brand-red"
+            className="p-1 text-center active:scale-75 px-4 min-w-[6rem] transition-all duration-150 rounded-md hover:bg-brand-red/20 bg-brand-red/10 text-brand-red"
           >
             {t('header.whatarewedoing')}
           </Link>
           <Link
             to={Contents.header.account.links[i18next.language]}
-            className="p-1 px-2 flex flex-wrap justify-center content-center text-lg transition-all duration-150 rounded-md hover:bg-red-200 bg-[#FFE7E7] text-brand-red"
+            className="p-1 px-2 flex flex-wrap justify-center content-center text-lg transition-all duration-150 rounded-md hover:bg-brand-red/20 bg-brand-red/10 text-brand-red"
           >
             <FaUser />
           </Link>
           <button
             type="button"
-            className="p-1 relative group px-2 flex flex-wrap justify-center content-center text-lg transition-all duration-150 rounded-md hover:bg-red-200 bg-[#FFE7E7] text-brand-red"
+            className="p-1 relative group px-2 flex flex-wrap justify-center content-center text-lg transition-all duration-150 rounded-md hover:bg-brand-red/20 bg-brand-red/10 text-brand-red"
           >
             <MdLanguage />
             <div className="py-1 transition-all duration-200 group-hover:opacity-100 group-hover:scale-100 group-hover:visible opacity-0 scale-75 invisible w-full absolute top-full left-0">
@@ -94,7 +94,7 @@ export default function Header() {
                         )}`
                       : `/tr${window.location.pathname}`
                   }
-                  className="p-1 w-full text-center transition-all duration-150 hover:bg-red-200 bg-white text-brand-red"
+                  className="p-1 w-full text-center transition-all duration-150 hover:bg-brand-red/20 bg-white text-brand-red"
                 >
                   {i18next.language === 'tr' ? 'EN' : 'TR'}
                 </a>
@@ -105,7 +105,7 @@ export default function Header() {
         <div className="xl:hidden lg:hidden flex flex-wrap content-center justify-end gap-x-5">
           <label
             htmlFor="mobileMenuBtn"
-            className="p-2 z-[90] cursor-pointer relative group px-2 flex flex-wrap justify-center content-center text-lg transition-all duration-150 rounded-md hover:bg-red-200 bg-[#FFE7E7] text-brand-red"
+            className="p-2 z-[90] cursor-pointer relative group px-2 flex flex-wrap justify-center content-center text-lg transition-all duration-150 rounded-md hover:bg-brand-red/20 bg-brand-red/10 text-brand-red"
           >
             <input
               id="mobileMenuBtn"
@@ -132,31 +132,31 @@ export default function Header() {
         <div className="grid grid-cols-1 gap-3 place-content-start place-items-center max-w-sm w-full">
           <Link
             to={Contents.header.homepage.links[i18next.language]}
-            className="p-1 text-center active:scale-75 px-4 w-full transition-all duration-150 rounded-md hover:bg-red-200 bg-[#FFE7E7] text-brand-red"
+            className="p-1 text-center active:scale-75 px-4 w-full transition-all duration-150 rounded-md hover:bg-brand-red/20 bg-brand-red/10 text-brand-red"
           >
             {t('header.homepage')}
           </Link>
           <Link
             to={Contents.header.products.links[i18next.language]}
-            className="p-1 text-center active:scale-75 px-4 w-full transition-all duration-150 rounded-md hover:bg-red-200 bg-[#FFE7E7] text-brand-red"
+            className="p-1 text-center active:scale-75 px-4 w-full transition-all duration-150 rounded-md hover:bg-brand-red/20 bg-brand-red/10 text-brand-red"
           >
             {t('header.products')}
           </Link>
           <Link
             to={Contents.header.contact.links[i18next.language]}
-            className="p-1 text-center active:scale-75 px-4 w-full transition-all duration-150 rounded-md hover:bg-red-200 bg-[#FFE7E7] text-brand-red"
+            className="p-1 text-center active:scale-75 px-4 w-full transition-all duration-150 rounded-md hover:bg-brand-red/20 bg-brand-red/10 text-brand-red"
           >
             {t('header.contact')}
           </Link>
           <Link
             to={Contents.header.whatarewedoing.links[i18next.language]}
-            className="p-1 text-center active:scale-75 px-4 w-full transition-all duration-150 rounded-md hover:bg-red-200 bg-[#FFE7E7] text-brand-red"
+            className="p-1 text-center active:scale-75 px-4 w-full transition-all duration-150 rounded-md hover:bg-brand-red/20 bg-brand-red/10 text-brand-red"
           >
             {t('header.whatarewedoing')}
           </Link>
           <Link
             to={Contents.header.account.links[i18next.language]}
-            className="p-1 text-center active:scale-75 px-4 w-full transition-all duration-150 rounded-md hover:bg-red-200 bg-[#FFE7E7] text-brand-red"
+            className="p-1 text-center active:scale-75 px-4 w-full transition-all duration-150 rounded-md hover:bg-brand-red/20 bg-brand-red/10 text-brand-red"
           >
             {t('header.account')}
           </Link>
@@ -170,7 +170,7 @@ export default function Header() {
                   )}`
                 : `/tr${window.location.pathname}`
             }
-            className="p-1 text-center active:scale-75 px-4 w-full transition-all duration-150 rounded-md hover:bg-red-200 bg-[#FFE7E7] text-brand-red"
+            className="p-1 text-center active:scale-75 px-4 w-full transition-all duration-150 rounded-md hover:bg-brand-red/20 bg-brand-red/10 text-brand-red"
           >
             {i18next.language === 'tr' ? 'English' : 'Türkçe'}
           </a>

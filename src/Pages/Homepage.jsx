@@ -10,7 +10,7 @@ import ContactForm from '../Components/PageComponents/ContactForm';
 export default function Homepage() {
   return (
     <>
-      <div className="font-pop p-5 pt-20 w-full flex flex-wrap justify-center content-center min-h-screen bg-gradient-to-r from-white to-red-100">
+      <div className="font-pop p-5 pt-20 w-full flex flex-wrap justify-center content-center min-h-screen bg-gradient-to-r from-white to-brand-red/10">
         <div className="w-full max-w-7xl grid gap-5 place-content-center place-items-center xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-2 grid-cols-1">
           <div className="w-full p-0 grid grid-cols-1 gap-5 place-content-center place-items-start">
             <h1 className="xl:text-4xl lg:text-4xl whitespace-pre-wrap text-3xl text-brand-red font-bold">
@@ -62,7 +62,7 @@ export default function Homepage() {
             <a
               download
               href="x"
-              className="p-2 active:scale-75 flex mt-3 justify-center gap-1 text-center px-4 min-w-[6rem] transition-all duration-150 rounded-md hover:bg-red-200 bg-[#FFE7E7] text-brand-red"
+              className="p-2 active:scale-75 flex mt-3 justify-center gap-1 text-center px-4 min-w-[6rem] transition-all duration-150 rounded-md hover:bg-brand-red/20 bg-brand-red/10 text-brand-red"
             >
               {t('buttons.download-pdf')}
               <MdOutlineFileDownload className="self-center" />
@@ -87,7 +87,7 @@ export default function Homepage() {
             <a
               download
               href="x"
-              className="p-2 active:scale-75 flex mt-3 justify-center gap-1 text-center px-4 min-w-[6rem] transition-all duration-150 rounded-md hover:bg-red-200 bg-[#FFE7E7] text-brand-red"
+              className="p-2 active:scale-75 flex mt-3 justify-center gap-1 text-center px-4 min-w-[6rem] transition-all duration-150 rounded-md hover:bg-brand-red/20 bg-brand-red/10 text-brand-red"
             >
               {t('buttons.download-pdf')}
               <MdOutlineFileDownload className="self-center" />
@@ -112,7 +112,7 @@ export default function Homepage() {
             <a
               download
               href="x"
-              className="p-2 active:scale-75 flex mt-3 justify-center gap-1 text-center px-4 min-w-[6rem] transition-all duration-150 rounded-md hover:bg-red-200 bg-[#FFE7E7] text-brand-red"
+              className="p-2 active:scale-75 flex mt-3 justify-center gap-1 text-center px-4 min-w-[6rem] transition-all duration-150 rounded-md hover:bg-brand-red/20 bg-brand-red/10 text-brand-red"
             >
               {t('buttons.download-pdf')}
               <MdOutlineFileDownload className="self-center" />
