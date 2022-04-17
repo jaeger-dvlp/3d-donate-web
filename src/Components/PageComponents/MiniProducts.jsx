@@ -37,7 +37,7 @@ export default function MiniProducts() {
 
   useEffect(() => {
     setProducts(
-      <div className="w-full font-pop place-content-start place-items-center xl:max-w-full lg:max-w-full max-w-lg grid xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10">
+      <div className="w-full relative font-pop place-content-start place-items-center xl:max-w-full lg:max-w-full max-w-lg grid xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10">
         {mockProducts.map((product) => (
           <ProductCard
             key={`product-${Math.floor(Math.random() * 9999)}-${Math.floor(
@@ -53,7 +53,7 @@ export default function MiniProducts() {
   return (
     <div className="font-pop w-full grid grid-cols-1 p-5 py-16 place-content-start place-items-center">
       <div className="w-full max-w-7xl grid grid-cols-1 place-content-start place-items-center">
-        <div className="text-center w-full gap-16 grid grid-cols-1 place-content-start place-items-center">
+        <div className="text-center w-full max-w-4xl gap-16 gap-x-0 grid grid-cols-1 place-content-start place-items-center">
           <h1 className="p-3 rounded-lg w-full max-w-[15rem] bg-brand-red/10 text-brand-red font-bold text-xl">
             {t('pages.homepage.products.our-products')}
           </h1>
