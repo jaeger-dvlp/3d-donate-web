@@ -1,10 +1,16 @@
+/* eslint-disable operator-linebreak */
 /* eslint-disable react/prop-types */
 import React, { createContext, useMemo, useState } from 'react';
 
 const MainContext = createContext();
 
 export function MainContextProvider({ children }) {
-  const [myCart, setMyCart] = useState(null);
+  const [myCart, setMyCart] = useState(
+    localStorage.getItem('3d-donate-cart') &&
+      (localStorage.getItem('3d-donate-cart') !== 'null'
+        ? JSON.parse(localStorage.getItem('3d-donate-cart'))
+        : null),
+  );
   const [popup, setPopup] = useState({
     isVisible: false,
     status: 'error',
