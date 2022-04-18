@@ -9,17 +9,19 @@ import MainContext from '../Contexts/MainContext';
 
 export default function Cart() {
   const [cartActivity, setCartActivity] = useState(false);
+  const [cartComponent, setCartComponent] = useState(null);
   const { myCart, setMyCart } = useContext(MainContext);
 
   useEffect(() => {
-    if (!cartActivity && myCart) {
+    if (myCart) {
       setCartActivity(true);
+      localStorage.setItem('3d-donate-cart', JSON.stringify(myCart));
+    } else {
+      localStorage.setItem('3d-donate-cart', null);
     }
-  }, [myCart]);
 
-  function CartContent() {
-    return (
-      myCart && (
+    setCartComponent(
+      myCart ? (
         <div className="fade-in grid grid-cols-5 gap-x-5 gap-y-5">
           <img
             className="w-full col-span-2 rounded-xl border-red-300 border"
@@ -45,9 +47,9 @@ export default function Cart() {
             </button>
           </div>
         </div>
-      )
+      ) : null,
     );
-  }
+  }, [myCart]);
 
   return (
     <div className="fixed z-10 right-5 bottom-5">
@@ -61,7 +63,7 @@ export default function Cart() {
         <h1 className="p-3 bg-brand-red/10 rounded-xl w-full text-center  text-brand-red font-bold text-xl">
           {t('components.cart.title')}
         </h1>
-        <CartContent />
+        {myCart && cartComponent}
         <h1
           className={`${
             myCart
