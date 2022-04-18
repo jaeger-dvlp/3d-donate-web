@@ -18,37 +18,39 @@ export default function ProductCard({ incomingProduct }) {
   return (
     <div
       className="w-full group hover:bg-zinc-50 xl:max-w-lg lg:max-w-lg max-w-xs
-      grid grid-cols-1 gap-4 transition-all duration-200 hover:shadow-lg hover:border-zinc-200
-    bg-white rounded-3xl shadow-md border border-zinc-100 place-content-start place-items-start p-5"
+      grid grid-cols-1 gap-4 transition-all duration-200 shadow-xl hover:border-zinc-200
+    bg-white rounded-xl overflow-hidden border border-zinc-100 place-content-start place-items-start p-0"
     >
       <Link
-        className="rounded-2xl border border-zinc/50 overflow-hidden"
+        className="overflow-hidden w-full h-full border-b border-b-zinc-200"
         to={`/products/${incomingProduct.productSlug}`}
       >
         <img
-          className="w-full group-hover:scale-110 transition-all duration-300"
+          className="w-full h-full object-cover max-h-[15rem]"
           src={incomingProduct.productImage}
           alt={incomingProduct.productTitle[i18next.language]}
         />
       </Link>
 
-      <h1 className="xl:text-2xl w-full max-w-[14rem] whitespace-nowrap overflow-hidden lg:text-2xl text-lg text-left text-zinc-400 font-semibold">
-        {incomingProduct.productTitle[i18next.language]}
-      </h1>
-      <div className="w-full flex flex-wrap justify-start content-center gap-5">
-        <button
-          type="button"
-          onClick={() => updateCart(incomingProduct)}
-          className="p-3 focus:ring-2 ring-brand-red/30  active:scale-90 font-semibold hover:bg-brand-red/20 transition-all duration-200 rounded-lg w-full max-w-[8rem] border border-brand-red/50 bg-white text-brand-red"
-        >
-          {t('buttons.add-to-cart')}
-        </button>
-        <Link
-          className="self-center text-brand-red hover:underline text-sm"
-          to={`/products/${incomingProduct.productSlug}`}
-        >
-          {t('buttons.see-details')}
-        </Link>
+      <div className="w-full grid grid-cols-1 place-content-start place-items-start p-5 gap-4 pt-0">
+        <h1 className="xl:text-xl w-full max-w-[14rem] whitespace-nowrap overflow-hidden lg:text-xl text-lg text-left text-gray-400 font-semibold">
+          {incomingProduct.productTitle[i18next.language]}
+        </h1>
+        <div className="w-full pt-0 flex flex-wrap justify-start content-center gap-5">
+          <button
+            type="button"
+            onClick={() => updateCart(incomingProduct)}
+            className="p-2 text-sm focus:ring-2 ring-brand-red/30 active:scale-90 font-semibold transition-all duration-200 rounded-lg w-full max-w-[7rem] border border-brand-red/50 text-white bg-brand-red hover:brightness-90"
+          >
+            {t('buttons.add-to-cart')}
+          </button>
+          <Link
+            className="self-center text-brand-red hover:underline text-xs"
+            to={`/products/${incomingProduct.productSlug}`}
+          >
+            {t('buttons.see-details')}
+          </Link>
+        </div>
       </div>
     </div>
   );
