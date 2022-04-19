@@ -3,7 +3,7 @@
 
 import React, { useRef, useEffect } from 'react';
 
-export default function ProductSearchBar({ props }) {
+export default function ProductFilter({ props }) {
   const productSearch = useRef();
   const { searchVal, setSearchVal } = props;
   useEffect(() => {
