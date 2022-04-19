@@ -15,6 +15,7 @@ export default function Header() {
   const pathname = useLocation();
   const [mobileMenu, setMobileMenu] = useState(false);
   const appHeader = useRef();
+
   useEffect(() => {
     window.addEventListener('scroll', () => {
       if (
@@ -29,7 +30,11 @@ export default function Header() {
         appHeader.current.classList.remove('xl:!py-2', 'lg:!py-2');
       }
     });
+  }, []);
+
+  useEffect(() => {
     setMobileMenu(false);
+    window.scrollTo({ top: 0, behavior: 'auto' });
   }, [pathname]);
 
   return (
