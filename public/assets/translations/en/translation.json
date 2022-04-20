@@ -86,6 +86,11 @@
         }
       ]
     },
+    "products": {
+      "header": "Which product are you looking for?",
+      "description": "Having trouble finding the product you are looking for?\nDo not hesitate to search!",
+      "filter-placeholder": "Adaptive Spoon Holder.."
+    },
     "not-found": {
       "description": "The page you're looking for is not found."
     }

@@ -86,6 +86,11 @@
         }
       ]
     },
+    "products": {
+      "header": "Hangi ürünü arıyorsunuz?",
+      "description": "Aradığınız ürünü bulmakta zorluk mu çekiyorsunuz?\nAramaktan çekinmeyin!",
+      "filter-placeholder": "Adaptif Kaşık Tutucu.."
+    },
     "not-found": {
       "description": "Aradığın sayfayı bulamadık."
     }
