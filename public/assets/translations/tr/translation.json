@@ -9,7 +9,8 @@
     "okay": "Tamam"
   },
   "errors": {
-    "max-cart-one": "Sepetinize en fazla 1 ürün ekleyebilirsiniz."
+    "max-cart-one": "Sepetinize en fazla 1 ürün ekleyebilirsiniz.",
+    "already-in-cart": "Bu ürün zaten sepetinizde."
   },
   "components": {
     "cart": {

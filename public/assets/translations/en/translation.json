@@ -9,7 +9,8 @@
     "okay": "Okay"
   },
   "errors": {
-    "max-cart-one": "You can add only 1 product to your cart."
+    "max-cart-one": "You can add only 1 product to your cart.",
+    "already-in-cart": "This product already in your cart."
   },
   "components": {
     "cart": {
