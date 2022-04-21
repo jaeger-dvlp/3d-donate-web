@@ -1,5 +1,4 @@
-/* eslint-disable function-paren-newline */
-/* eslint-disable no-confusing-arrow */
+/* eslint-disable jsx-a11y/no-noninteractive-tabindex */
 /* eslint-disable react/prop-types */
 /* eslint-disable implicit-arrow-linebreak */
 
@@ -57,9 +56,7 @@ export default function ProductFilter({ props }) {
           <div className="grid grid-cols-1 place-content-center place-items-center xl:col-span-1 lg:col-span-1 md:col-span-2 col-span-full p-3 xl:border-r lg:border-r md:border-r xl:border-b-0 lg:border-b-0 md:border-b-0 border-b border-brand-red/20">
             <div
               tabIndex={0}
-              role="button"
-              className="relative text-center w-full group p-3 bg-brand-red/20 hover:bg-brand-red/30 focus-within:bg-brand-red/30 transition-colors  duration-200 font-semibold focus:ring-2 ring-brand-red/50 text-brand-red rounded-lg"
-              type="button"
+              className="relative category-selector cursor-pointer !outline-none text-center w-full group p-3 bg-brand-red/20 hover:bg-brand-red/30 focus-within:bg-brand-red/30 transition-colors  duration-200 font-semibold focus:ring-2 ring-brand-red/50 text-brand-red rounded-lg"
             >
               {selectedProductCategory[i18next.language]}
               {mockCategories.length > 1 && (
@@ -68,19 +65,20 @@ export default function ProductFilter({ props }) {
                 </span>
               )}
               <div
-                className="absolute cursor-default scale-y-90 group-focus-within:scale-y-100 grid gap-3 grid-cols-1 place-content-start place-items-center bg-transparent p-0 m-0 transition-all top-full
+                className="absolute cursor-default scale-y-90 group-focus-within:scale-y-100 grid gap-3 grid-cols-1 place-content-start place-items-center bg-transparent p-0 m-0 transition-all duration-300 top-full
               group-focus-within:top-[calc(0.75rem_+_100%)] group-focus-within:opacity-100 group-focus-within:visible invisible opacity-0 left-0 w-full "
               >
                 {mockCategories.map(
                   (category) =>
                     category.slug !== selectedProductCategory.slug && (
                       <button
+                        key={`categoryButton${category.slug}`}
                         type="button"
-                        onClick={(e) => {
+                        onClick={() => {
+                          document.querySelector('.category-selector').blur();
                           setSelectedProductCategory(category);
-                          e.target.blur();
                         }}
-                        className=" bg-white overflow-hidden grid grid-cols-1 place-content-center place-items-center focus:ring-2 ring-brand-red/50 rounded-lg w-full p-0 h-full text-brand-red font-semibold"
+                        className=" bg-white !outline-none overflow-hidden grid grid-cols-1 place-content-center place-items-center focus:ring-2 ring-brand-red/50 rounded-lg w-full p-0 h-full text-brand-red font-semibold"
                       >
                         <span className="w-full text-center  left-0 top-0 h-full bg-brand-red/20 hover:bg-brand-red/30 transition-colors p-3">
                           {category[i18next.language]}
