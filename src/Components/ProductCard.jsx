@@ -10,6 +10,12 @@ export default function ProductCard({ incomingProduct }) {
   const updateCart = (product) => {
     if (!myCart) {
       setMyCart(product);
+    } else if (myCart === product) {
+      setPopup({
+        ...popup,
+        isVisible: true,
+        text: t('errors.already-in-cart'),
+      });
     } else {
       setPopup({ ...popup, isVisible: true, text: t('errors.max-cart-one') });
     }
@@ -25,11 +31,17 @@ export default function ProductCard({ incomingProduct }) {
         className="overflow-hidden w-full h-full border-b border-b-zinc-200"
         to={`/products/${incomingProduct.productSlug}`}
       >
-        <img
-          className="w-full h-full object-cover max-h-[15rem]"
-          src={incomingProduct.productImage}
-          alt={incomingProduct.productTitle[i18next.language]}
-        />
+        {incomingProduct.productImage ? (
+          <img
+            className="w-full object-cover h-[15rem]"
+            src={incomingProduct.productImage}
+            alt={incomingProduct.productTitle[i18next.language]}
+          />
+        ) : (
+          <div className="w-full h-[15rem] grid grid-cols-1 place-content-center place-items-center">
+            <div className="w-16 h-16 rounded-full bg-brand-red/30" />
+          </div>
+        )}
       </Link>
 
       <div className="w-full grid grid-cols-1 place-content-start place-items-start p-5 pt-0 gap-2">
