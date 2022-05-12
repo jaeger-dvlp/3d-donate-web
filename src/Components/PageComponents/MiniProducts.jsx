@@ -3,7 +3,6 @@ import i18next, { t } from 'i18next';
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Contents from '../../Content';
-import Images from '../../Images';
 import MockProducts from '../../MockContent/MockProduct';
 import ProductCard from '../ProductCard';
 
