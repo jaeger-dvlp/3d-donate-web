@@ -4,36 +4,12 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Contents from '../../Content';
 import Images from '../../Images';
+import MockProducts from '../../MockContent/MockProduct';
 import ProductCard from '../ProductCard';
 
 export default function MiniProducts() {
   const [products, setProducts] = useState(null);
-  const mockProducts = [
-    {
-      productTitle: {
-        tr: 'Adaptif Kaşık Tut.',
-        en: 'Adaptive Spoon H.',
-      },
-      productSlug: 'adaptive-spoon-holder',
-      productImage: Images.MockProduct1,
-    },
-    {
-      productTitle: {
-        tr: 'Adaptif Kalem Tut.',
-        en: 'Adaptive Pencil H.',
-      },
-      productSlug: 'adaptive-pencil-holder',
-      productImage: Images.MockProduct2,
-    },
-    {
-      productTitle: {
-        tr: 'Adaptif Kapak',
-        en: 'Adaptive Cover',
-      },
-      productSlug: 'adaptive-cover',
-      productImage: Images.MockProduct3,
-    },
-  ];
+  const mockProducts = [MockProducts[0], MockProducts[1], MockProducts[2]];
 
   useEffect(() => {
     setProducts(
