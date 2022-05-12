@@ -19,17 +19,20 @@ export default function ProductFilter({ props }) {
   const [selectedProductCategory, setSelectedProductCategory] =
     useState(defaultCategory);
 
+  const [filterVal, setFilterVal] = useState(null);
+
   const { searchVal, setSearchVal } = props;
   useEffect(() => {
     const searchProduct = (e) => {
       e.preventDefault();
+      setSearchVal(filterVal);
     };
 
     productSearch.current.addEventListener('submit', searchProduct);
 
     return () =>
       productSearch.current.removeEventListener('submit', searchProduct);
-  }, [searchVal]);
+  }, [searchVal, filterVal]);
 
   return (
     <div className="w-full max-w-7xl grid grid-cols-1 p-0 gap-5 place-content-start place-items-start">
@@ -102,8 +105,9 @@ export default function ProductFilter({ props }) {
                 className="w-full border-b border-b-brand-red/10 text-zinc-500 bg-white placeholder-zinc-300 !outline-none p-2 px-3"
                 type="text"
                 placeholder={t('pages.products.filter-placeholder')}
-                value={searchVal}
-                onChange={(e) => setSearchVal(e.target.value)}
+                defaultValue={filterVal}
+                id="filter-product"
+                onChange={(e) => setFilterVal(e.target.value || null)}
               />
               <button
                 type="submit"
