@@ -23,7 +23,7 @@ export default function ProductCard({ incomingProduct }) {
 
   return (
     <div
-      className="w-full group hover:bg-zinc-50 xl:max-w-lg lg:max-w-lg max-w-xs
+      className="w-full fade-in group hover:bg-zinc-50 xl:max-w-lg lg:max-w-lg max-w-xs
       grid grid-cols-1 gap-4 transition-all duration-200 shadow-xl hover:border-zinc-200
     bg-white rounded-xl overflow-hidden border border-zinc-100 place-content-start place-items-start p-0"
     >
