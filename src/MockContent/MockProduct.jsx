@@ -3,8 +3,8 @@ import Images from '../Images';
 const MockProducts = [
   {
     productTitle: {
-      tr: 'Adaptif Kaşık Tut.',
-      en: 'Adaptive Spoon H',
+      tr: 'Adaptif Kaşık Tutucu',
+      en: 'Adaptive Spoon Holder',
     },
     productSlug: 'adaptive-spoon-holder',
     productImage: Images.MockProduct1.toString(),
@@ -12,8 +12,8 @@ const MockProducts = [
   },
   {
     productTitle: {
-      tr: 'Adaptif Kalem Tut.',
-      en: 'Adaptive Pencil H.',
+      tr: 'Adaptif Kalem Tutucu',
+      en: 'Adaptive Pencil Holder',
     },
     productSlug: 'adaptive-pencil-holder',
     productImage: Images.MockProduct2.toString(),
