@@ -19,7 +19,8 @@
   },
   "labels": {
     "cart-empty": "Your cart is empty.",
-    "contact-us": "Contact Us"
+    "contact-us": "Contact Us",
+    "no-product-found-search": "We could not found the product you're looking for."
   },
   "forms": {
     "contact-form": {

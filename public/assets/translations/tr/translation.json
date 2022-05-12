@@ -19,7 +19,8 @@
   },
   "labels": {
     "cart-empty": "Sepetiniz boş.",
-    "contact-us": "İletişim"
+    "contact-us": "İletişim",
+    "no-product-found-search": "Aradığınız kriterlere uygun ürün bulunamadı."
   },
   "forms": {
     "contact-form": {
