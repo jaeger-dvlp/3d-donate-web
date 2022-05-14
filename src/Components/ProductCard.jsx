@@ -1,3 +1,4 @@
+/* eslint-disable indent */
 /* eslint-disable object-curly-newline */
 /* eslint-disable react/prop-types */
 import i18next, { t } from 'i18next';
@@ -46,7 +47,12 @@ export default function ProductCard({ incomingProduct }) {
 
       <div className="w-full grid grid-cols-1 place-content-start place-items-start p-5 pt-0 gap-2">
         <h1 className="xl:text-xl w-full max-w-[14rem] whitespace-nowrap overflow-hidden lg:text-xl text-lg text-left text-gray-400 font-semibold">
-          {incomingProduct.productTitle[i18next.language]}
+          {incomingProduct.productTitle[i18next.language].length > 19
+            ? `${incomingProduct.productTitle[i18next.language].substring(
+                0,
+                19,
+              )}...`
+            : incomingProduct.productTitle[i18next.language]}
         </h1>
         <div className="w-full pt-0 flex flex-wrap justify-start content-center gap-5">
           <button
