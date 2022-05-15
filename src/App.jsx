@@ -8,6 +8,7 @@ import Popup from './Components/Popup';
 import { MainContextProvider } from './Contexts/MainContext';
 import Homepage from './Pages/Homepage';
 import NotFound from './Pages/NotFound';
+import ProductPage from './Pages/ProductPage';
 import Products from './Pages/Products';
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
         <Switch>
           <Route exact path={lang} component={Homepage} />
           <Route exact path={`${lang}/products`} component={Products} />
+          <Route exact path={`${lang}/products/:id`} component={ProductPage} />
           <Route exact path={`${lang}/*`} component={NotFound} />
         </Switch>
         <Footer />
