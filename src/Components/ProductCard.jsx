@@ -30,7 +30,7 @@ export default function ProductCard({ incomingProduct }) {
     >
       <Link
         className="overflow-hidden w-full h-full border-b border-b-zinc-200"
-        to={`/products/${incomingProduct.productSlug}`}
+        to={`/${i18next.language}/products/${incomingProduct.productSlug}`}
       >
         {incomingProduct.productImage ? (
           <img
