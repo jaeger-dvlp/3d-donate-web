@@ -8,6 +8,10 @@ const MockProducts = [
     },
     productSlug: 'adaptive-spoon-holder',
     productImage: Images.MockProduct1.toString(),
+    productDescription: {
+      tr: 'Eases the use of pen/paint brush for individuals who work in an office environment with gripping problems.\n\nDoesn’t contains any hazardous material.\nIt is preferred for academic development and participation in artistic activities.\nCan be used with any pen/paint brush.\n\nDesigner: Luca Parmegiani\nTasarımcı: Luca Parmegian\nWebsite: Myminifactory',
+      en: 'Eases the use of pen/paint brush for individuals who work in an office environment with gripping problems.\n\nDoesn’t contains any hazardous material.\nIt is preferred for academic development and participation in artistic activities.\nCan be used with any pen/paint brush.\n\nDesigner: Luca Parmegiani\nTasarımcı: Luca Parmegian\nWebsite: Myminifactory',
+    },
     modelId: 'STLOBJ001',
   },
   {
