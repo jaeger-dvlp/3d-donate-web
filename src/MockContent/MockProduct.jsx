@@ -59,7 +59,6 @@ const MockProducts = [
     productImage: null,
     modelId: 'STLOBJ006',
   },
-
   {
     productTitle: {
       tr: 'Adaptif Fermuar',
@@ -68,6 +67,33 @@ const MockProducts = [
     productSlug: 'adaptive-zipper',
     productImage: null,
     modelId: 'STLOBJ007',
+  },
+  {
+    productTitle: {
+      tr: 'Parmak Destekli Anahtarlık',
+      en: 'Finger Support Keychain',
+    },
+    productSlug: 'finger-support-keychain',
+    productImage: null,
+    modelId: 'STLOBJ008',
+  },
+  {
+    productTitle: {
+      tr: 'Eğitim Seti',
+      en: 'Education Set',
+    },
+    productSlug: 'education-set-1',
+    productImage: Images.EducationSet1.toString(),
+    modelId: null,
+  },
+  {
+    productTitle: {
+      tr: 'Kuş Evi',
+      en: 'Bird House',
+    },
+    productSlug: 'bird-house',
+    productImage: Images.BirdHouse.toString(),
+    modelId: null,
   },
   {
     productTitle: {
