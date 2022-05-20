@@ -11,6 +11,8 @@ import MockProduct from '../MockContent/MockProduct';
 import CartContext from '../Contexts/MainContext';
 import Contents from '../Content';
 import Images from '../Images';
+import Loader from '../Components/Loader';
+import NotFound from './NotFound';
 
 export default function ProductPage() {
   const [product, setProduct] = React.useState('loading');
@@ -19,21 +21,48 @@ export default function ProductPage() {
   const { pSlug } = params;
 
   useEffect(() => {
-    setProduct(
-      MockProduct.find(({ productSlug }) => productSlug === pSlug) || null,
-    );
+    setTimeout(() => {
+      setProduct(
+        MockProduct.find(({ productSlug }) => productSlug === pSlug) || null,
+      );
+    }, 2000);
   }, []);
 
   if (product === null) {
-    return <div className="py-36">Product Not Found</div>;
+    return <NotFound />;
   }
 
   if (product === 'loading') {
-    return <div className="py-36">Loading...</div>;
+    return (
+      <div className="fixed fade-in w-screen h-screen z-[1] left-0 top-0 bg-white text-brand-red flex flex-wrap justify-center content-center p-0 m-0">
+        <div className="rounded-full shadow-[0_0px_10px_#de00007c] ">
+          <svg
+            className="animate-spin h-5 w-5"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+          >
+            <circle
+              className="opacity-50"
+              cx="12"
+              cy="12"
+              r="10"
+              stroke="currentColor"
+              strokeWidth="4"
+            />
+            <path
+              className="opacity-100"
+              fill="currentColor"
+              d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+            />
+          </svg>
+        </div>
+      </div>
+    );
   }
 
   return (
-    <div className="min-h-[70vh] font-pop xl:pt-36 lg:pt-36 pt-28 w-full flex flex-wrap justify-center content-start p-0 m-0">
+    <div className="min-h-[70vh] fade-in-slow font-pop xl:pt-36 lg:pt-36 pt-28 w-full flex flex-wrap justify-center content-start p-0 m-0">
       <div className="w-full xl:max-w-7xl lg:max-w-7xl max-w-lg grid xl:grid-cols-2 lg:grid-cols-2 grid-cols-1 place-content-start place-items-start p-5 gap-5">
         <div className="w-full col-span-full flex justify-start content-center gap-1">
           <Link
