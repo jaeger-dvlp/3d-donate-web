@@ -11,6 +11,7 @@ import MockProduct2 from './img/products/mockproduct2.jpg';
 import MockProduct3 from './img/products/mockproduct3.jpg';
 
 import page404 from './img/mix/404.svg';
+import placeholder from './img/mix/placeholder.svg';
 
 const Images = {
   Logo,
@@ -22,6 +23,7 @@ const Images = {
   MockProduct2,
   MockProduct3,
   page404,
+  placeholder,
 };
 
 export default Images;
