@@ -24,7 +24,7 @@ export default function ProductPage() {
       setProduct(
         MockProduct.find(({ productSlug }) => productSlug === pSlug) || null,
       );
-    }, 2000);
+    }, 3000);
   }, []);
 
   if (product === null) {
