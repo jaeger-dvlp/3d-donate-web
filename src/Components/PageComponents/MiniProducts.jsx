@@ -8,7 +8,11 @@ import ProductCard from '../ProductCard';
 
 export default function MiniProducts() {
   const [products, setProducts] = useState(null);
-  const mockProducts = [MockProducts[0], MockProducts[1], MockProducts[2]];
+  const mockProducts = [
+    MockProducts[0],
+    MockProducts.find(({ productSlug }) => productSlug === 'education-set-1'),
+    MockProducts.find(({ productSlug }) => productSlug === 'bird-house'),
+  ];
 
   useEffect(() => {
     setProducts(
