@@ -23,7 +23,11 @@ function App() {
         <Switch>
           <Route exact path={lang} component={Homepage} />
           <Route exact path={`${lang}/products`} component={Products} />
-          <Route exact path={`${lang}/products/:id`} component={ProductPage} />
+          <Route
+            exact
+            path={`${lang}/products/:pSlug`}
+            component={ProductPage}
+          />
           <Route exact path={`${lang}/*`} component={NotFound} />
         </Switch>
         <Footer />
