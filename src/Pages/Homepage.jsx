@@ -10,22 +10,43 @@ import ContactForm from '../Components/PageComponents/ContactForm';
 export default function Homepage() {
   return (
     <>
-      <div className="font-pop p-5 pt-20 w-full flex flex-wrap justify-center content-center min-h-screen bg-gradient-to-r from-white to-brand-red/10">
-        <div className="w-full max-w-7xl grid gap-5 place-content-center place-items-center xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-2 grid-cols-1">
+      <div
+        style={{ backgroundImage: `url(${Images.Homebanner})` }}
+        className="font-pop p-5 pt-20 w-full flex flex-wrap bg-cover bg-center justify-center content-end min-h-screen bg-gradient-to-r from-white to-brand-red/10"
+      >
+        <div className=" bg-black/60 backdrop-blur-xs w-full max-w-2xl rounded-xl gap-5 p-5 flex flex-wrap justify-start content-start">
           <div className="w-full p-0 grid grid-cols-1 gap-5 place-content-center place-items-start">
-            <h1 className="xl:text-4xl lg:text-4xl whitespace-pre-wrap text-3xl text-brand-red font-bold">
+            <h1 className="xl:text-4xl lg:text-4xl  text-3xl text-brand-red font-bold">
               {t('pages.homepage.banner.header')}
             </h1>
-            <p className="text-zinc-500 font-medium whitespace-pre-wrap xl:text-lg lg:text-lg text-md">
+            <p className="text-zinc-200 w-full font-medium  xl:text-lg lg:text-lg text-md">
               {t('pages.homepage.banner.description')}
             </p>
           </div>
-          <div className="grid grid-cols-1 place-content-center place-items-center">
+        </div>
+      </div>
+      <div className="w-full font-pop flex flex-wrap justify-center content-center m-0">
+        <div className="w-full grid grid-cols-1 place-content-start place-items-center p-0 pt-16 max-w-3xl">
+          <div className="w-full p-5">
             <img
-              src={Images.Homebanner}
-              className="w-full max-w-md object-contain"
-              alt="3D Donate"
+              src={Images.Galata}
+              alt="Galata Kulesi"
+              className="w-full max-w-3xl rounded-xl object-cover object-center h-full max-h-[20rem] "
             />
+          </div>
+          <div className="p-5">
+            <div className="w-full p-5 !text-xs bg-black/10 rounded-xl mt-0 grid gap-5 grid-cols-1 place-content-start place-items-center">
+              <p className="text-center text-zinc-600 text-sm">
+                3DDonate.com Ergoterapist İsmail İşler ve Emre Akıncı PhD.
+                tarafından Zaxe 3D desteği ile Zaxe Z3 3D yazıcılarla tamamen
+                ücretsiz olarak ihtiyaç sahibi tüm canlılara ürünler üretmek
+                için organize edildi.
+              </p>
+              <p className="text-center text-zinc-600 text-sm">
+                Ürünlerimiz üretim ve kargo hizmetleri dahil ücretsizdir.
+                İhtiyaca bağlı olarak PLA veya ABS filament ile üretilmektedir.
+              </p>
+            </div>
           </div>
         </div>
       </div>
