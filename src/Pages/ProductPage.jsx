@@ -11,7 +11,6 @@ import MockProduct from '../MockContent/MockProduct';
 import CartContext from '../Contexts/MainContext';
 import Contents from '../Content';
 import Images from '../Images';
-import Loader from '../Components/Loader';
 import NotFound from './NotFound';
 
 export default function ProductPage() {
