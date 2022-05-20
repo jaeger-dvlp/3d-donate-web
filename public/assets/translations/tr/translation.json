@@ -10,7 +10,11 @@
   },
   "errors": {
     "max-cart-one": "Sepetinize en fazla 1 ürün ekleyebilirsiniz.",
-    "already-in-cart": "Bu ürün zaten sepetinizde."
+    "already-in-cart": "Bu ürün zaten sepetinizde.",
+    "3d-not-available": "3D Görüntüleyici henüz kullanılabilir değil."
+  },
+  "hints": {
+    "3d-viewer-button": "3D Görüntüle"
   },
   "components": {
     "cart": {
@@ -92,6 +96,9 @@
       "header": "Hangi ürünü arıyorsunuz?",
       "description": "Aradığınız ürünü bulmakta zorluk mu çekiyorsunuz?\nAramaktan çekinmeyin!",
       "filter-placeholder": "Adaptif Kaşık Tutucu.."
+    },
+    "product-page": {
+      "show-as-3d": "3D Olarak Göster"
     },
     "not-found": {
       "description": "Aradığın sayfayı bulamadık."

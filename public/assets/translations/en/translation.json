@@ -10,7 +10,11 @@
   },
   "errors": {
     "max-cart-one": "You can add only 1 product to your cart.",
-    "already-in-cart": "This product already in your cart."
+    "already-in-cart": "This product already in your cart.",
+    "3d-not-available": "3D Viewer is currently unavailable."
+  },
+  "hints": {
+    "3d-viewer-button": "View in 3D"
   },
   "components": {
     "cart": {
@@ -92,6 +96,9 @@
       "header": "Which product are you looking for?",
       "description": "Having trouble finding the product you are looking for?\nDo not hesitate to search!",
       "filter-placeholder": "Adaptive Spoon Holder.."
+    },
+    "product-page": {
+      "show-as-3d": "View in 3D Viewer"
     },
     "not-found": {
       "description": "The page you're looking for is not found."
