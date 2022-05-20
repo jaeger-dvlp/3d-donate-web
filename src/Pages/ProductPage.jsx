@@ -14,7 +14,7 @@ import Images from '../Images';
 
 export default function ProductPage() {
   const [product, setProduct] = React.useState('loading');
-  const { popup, setPopup } = useContext(CartContext);
+  const { setPopup } = useContext(CartContext);
   const params = useParams();
   const { pSlug } = params;
 
