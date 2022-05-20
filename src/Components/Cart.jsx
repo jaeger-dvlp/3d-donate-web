@@ -84,7 +84,7 @@ export default function Cart() {
       <button
         type="button"
         onClick={() => setCartActivity(cartActivity ? false : true)}
-        className="p-3 z-10 overflow-hidden active:scale-90 xl:w-16 xl:h-16 lg:w-16 lg:h-16 flex flex-wrap justify-center content-center bg-white border-2 rounded-2xl border-brand-red/30 hover:bg-brand-red/10 transition-all duration-200 shadow-lg text-brand-red fixed bottom-5 right-5"
+        className="p-3 z-10 overflow-hidden active:scale-90 xl:w-16 xl:h-16 lg:w-16 lg:h-16 flex flex-wrap justify-center content-center bg-white border-2 rounded-2xl border-brand-red/30 hover:bg-zinc-300 transition-all duration-200 shadow-lg text-brand-red fixed bottom-5 right-5"
       >
         <BsCart2
           className={`${
