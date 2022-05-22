@@ -2,7 +2,7 @@
 /* eslint-disable indent */
 import i18next, { t } from 'i18next';
 import React, { useEffect, useState, useRef } from 'react';
-import { FaUser } from 'react-icons/fa';
+import { BsFillHandbagFill } from 'react-icons/bs';
 import { MdLanguage } from 'react-icons/md';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { IoIosClose } from 'react-icons/io';
@@ -84,10 +84,10 @@ export default function Header() {
             {t('header.blog')}
           </Link>
           <Link
-            to={Contents.header.account.links[i18next.language]}
+            to={Contents.header.cart.links[i18next.language]}
             className="p-1 px-2 flex flex-wrap justify-center content-center text-lg transition-all duration-150 rounded-md hover:bg-brand-red/20 bg-brand-red/10 text-brand-red"
           >
-            <FaUser />
+            <BsFillHandbagFill />
           </Link>
           <button
             type="button"
@@ -172,10 +172,10 @@ export default function Header() {
             {t('header.blog')}
           </Link>
           <Link
-            to={Contents.header.account.links[i18next.language]}
+            to={Contents.header.cart.links[i18next.language]}
             className="p-1 text-center active:scale-90 px-4 w-full transition-all duration-150 rounded-md hover:bg-brand-red/20 bg-brand-red/10 text-brand-red"
           >
-            {t('header.account')}
+            {t('header.cart')}
           </Link>
           <div className="py-2" />
           <a
