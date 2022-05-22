@@ -183,8 +183,8 @@ const Contents = {
     },
     whatarewedoing: {
       links: {
-        tr: '/tr/what-are-we-doing/',
-        en: '/what-are-we-doing/',
+        tr: '/tr/blog/what-are-we-aiming-when-we-design-our-adaptive-products/',
+        en: '/blog/what-are-we-aiming-when-we-design-our-adaptive-products/',
       },
     },
     blog: {
@@ -193,10 +193,10 @@ const Contents = {
         en: '/blog/',
       },
     },
-    account: {
+    cart: {
       links: {
-        tr: '/tr/account/',
-        en: '/account/',
+        tr: '/tr/cart/',
+        en: '/cart/',
       },
     },
   },
