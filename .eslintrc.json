@@ -19,6 +19,7 @@
   "rules": {
     "prettier/prettier": ["error", { "singleQuote": true, "parser": "flow" }],
     "no-unused-vars": "warn",
-    "no-console": "warn"
+    "no-console": "warn",
+    "react/prop-types": "off"
   }
 }
