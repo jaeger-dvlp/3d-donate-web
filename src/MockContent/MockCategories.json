@@ -1,12 +1,12 @@
 [
   {
-    "tr": "El Ürünleri",
-    "en": "Hand Products",
-    "slug": "hand-products"
+    "tr": "Oyuncak",
+    "en": "Toys",
+    "slug": "toy-products"
   },
   {
-    "tr": "Ayak Ürünleri",
-    "en": "Foot Products",
-    "slug": "foot-products"
+    "tr": "Hayvan",
+    "en": "Animal",
+    "slug": "animal-products"
   }
 ]
