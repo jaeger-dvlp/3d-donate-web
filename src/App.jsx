@@ -7,7 +7,9 @@ import Loader from './Components/Loader';
 import Popup from './Components/Popup';
 import { MainContextProvider } from './Contexts/MainContext';
 import Blog from './Pages/Blog';
+import Contact from './Pages/Contact';
 import Homepage from './Pages/Homepage';
+import MyCart from './Pages/MyCart';
 import NotFound from './Pages/NotFound';
 import PostPage from './Pages/PostPage';
 import ProductPage from './Pages/ProductPage';
@@ -25,6 +27,7 @@ function App() {
         <Switch>
           <Route exact path={lang} component={Homepage} />
           <Route exact path={`${lang}/products`} component={Products} />
+          <Route exact path={`${lang}/contact`} component={Contact} />
           <Route exact path={`${lang}/blog`} component={Blog} />
           <Route
             exact
@@ -32,6 +35,7 @@ function App() {
             component={ProductPage}
           />
           <Route exact path={`${lang}/blog/:postSlug`} component={PostPage} />
+          <Route exact path={`${lang}/cart`} component={MyCart} />
           <Route exact path={`${lang}/*`} component={NotFound} />
         </Switch>
         <Footer />
