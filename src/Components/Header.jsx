@@ -78,6 +78,12 @@ export default function Header() {
             {t('header.whatarewedoing')}
           </Link>
           <Link
+            to={Contents.header.blog.links[i18next.language]}
+            className="p-1 text-center active:scale-90 px-4 min-w-[6rem] transition-all duration-150 rounded-md hover:bg-brand-red/20 bg-brand-red/10 text-brand-red"
+          >
+            {t('header.blog')}
+          </Link>
+          <Link
             to={Contents.header.account.links[i18next.language]}
             className="p-1 px-2 flex flex-wrap justify-center content-center text-lg transition-all duration-150 rounded-md hover:bg-brand-red/20 bg-brand-red/10 text-brand-red"
           >
@@ -158,6 +164,12 @@ export default function Header() {
             className="p-1 text-center active:scale-90 px-4 w-full transition-all duration-150 rounded-md hover:bg-brand-red/20 bg-brand-red/10 text-brand-red"
           >
             {t('header.whatarewedoing')}
+          </Link>
+          <Link
+            to={Contents.header.blog.links[i18next.language]}
+            className="p-1 text-center active:scale-90 px-4 w-full transition-all duration-150 rounded-md hover:bg-brand-red/20 bg-brand-red/10 text-brand-red"
+          >
+            {t('header.blog')}
           </Link>
           <Link
             to={Contents.header.account.links[i18next.language]}
