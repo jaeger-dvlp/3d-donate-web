@@ -25,12 +25,12 @@ export default function Cart() {
         <div className="fade-in grid grid-cols-5 gap-x-5 gap-y-5">
           {myCart.productImage ? (
             <img
-              className="w-full col-span-2 rounded-xl border-brand-red/30 border"
+              className="col-span-2 w-16 h-16 rounded-xl border-brand-red/30 border"
               src={myCart.productImage}
               alt={myCart.productTitle[i18next.language]}
             />
           ) : (
-            <div className="w-full col-span-2 rounded-xl border-brand-red/30 border h-full grid grid-cols-1 place-content-center place-items-center">
+            <div className="w-16 h-16 col-span-2 rounded-xl border-brand-red/30 border grid grid-cols-1 place-content-center place-items-center">
               <div className="w-3 h-3 rounded-full bg-brand-red/30" />
             </div>
           )}
@@ -84,7 +84,7 @@ export default function Cart() {
       <button
         type="button"
         onClick={() => setCartActivity(cartActivity ? false : true)}
-        className="p-3 z-10 overflow-hidden active:scale-90 xl:w-16 xl:h-16 lg:w-16 lg:h-16 flex flex-wrap justify-center content-center bg-white border-2 rounded-2xl border-brand-red/30 hover:bg-zinc-300 transition-all duration-200 shadow-lg text-brand-red fixed bottom-5 right-5"
+        className="p-3 z-10 overflow-hidden active:scale-90 xl:w-16 xl:h-16 lg:w-16 lg:h-16 flex flex-wrap justify-center content-center bg-white border-2 rounded-2xl border-brand-red/30 hover:bg-zinc-100 transition-all duration-200 shadow-lg text-brand-red fixed bottom-5 right-5"
       >
         <BsCart2
           className={`${
