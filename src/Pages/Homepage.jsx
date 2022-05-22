@@ -6,6 +6,7 @@ import { MdOutlineFileDownload } from 'react-icons/md';
 import Images from '../Images';
 import MiniProducts from '../Components/PageComponents/MiniProducts';
 import ContactForm from '../Components/PageComponents/ContactForm';
+import MiniBlogs from '../Components/PageComponents/MiniBlogs';
 
 export default function Homepage() {
   return (
@@ -48,6 +49,7 @@ export default function Homepage() {
         </div>
       </div>
       <MiniProducts />
+      <MiniBlogs />
       <div className="bg-zinc-100 font-pop grid grid-cols-1 place-content-start place-items-center py-16 px-5">
         <div className="w-full max-w-xl grid grid-cols-1 place-content-start place-items-center gap-3">
           <h1 className="text-brand-red text-center text-3xl font-bold">
