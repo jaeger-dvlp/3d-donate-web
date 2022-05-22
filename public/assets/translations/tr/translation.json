@@ -5,6 +5,7 @@
     "download-pdf": "PDF İndir",
     "see-all": "Tümünü Gör",
     "to-home": "Anasayfaya Dön",
+    "read-more": "Daha Fazla",
     "send": "Gönder",
     "okay": "Tamam"
   },
@@ -61,6 +62,7 @@
     "products": "Ürünler",
     "contact": "İletişim",
     "whatarewedoing": "Neler Yapıyoruz?",
+    "blog": "Blog",
     "account": "Hesabım"
   },
   "pages": {
@@ -98,6 +100,11 @@
     },
     "product-page": {
       "show-as-3d": "3D Olarak Göster"
+    },
+    "blog": {
+      "header": "Yazılıramızı keşfedin.",
+      "description": "Bilgilendirici yazılarımızı keşfedin.",
+      "our-blog": "Blog"
     },
     "not-found": {
       "description": "Aradığın sayfayı bulamadık."
