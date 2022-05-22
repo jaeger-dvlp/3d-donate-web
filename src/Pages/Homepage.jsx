@@ -16,9 +16,6 @@ export default function Homepage() {
       >
         <div className=" bg-black/60 backdrop-blur-xs w-full max-w-2xl rounded-xl gap-5 p-5 flex flex-wrap justify-start content-start">
           <div className="w-full p-0 grid grid-cols-1 gap-5 place-content-center place-items-start">
-            <h1 className="xl:text-4xl lg:text-4xl  text-3xl text-brand-red font-bold">
-              {t('pages.homepage.banner.header')}
-            </h1>
             <p className="text-zinc-200 w-full font-medium  xl:text-lg lg:text-lg text-md">
               {t('pages.homepage.banner.description')}
             </p>
