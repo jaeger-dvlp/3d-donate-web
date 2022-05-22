@@ -65,20 +65,20 @@ export default function ProductPage() {
       <div className="w-full xl:max-w-7xl lg:max-w-7xl max-w-lg grid xl:grid-cols-2 lg:grid-cols-2 grid-cols-1 place-content-start place-items-start p-5 gap-5">
         <div className="w-full col-span-full flex justify-start content-center gap-1">
           <Link
-            className="text-brand-red self-center hover:underline font-semibold xl:text-sm lg:text-sm md:text-xs text-[0.1rem]"
+            className="text-brand-red self-center hover:underline font-semibold xl:text-sm lg:text-sm text-xs"
             to={Contents.header.homepage.links[i18next.language]}
           >
             {t('header.homepage')}
           </Link>
           <BiChevronRight className="text-zinc-400 self-center  text-lg" />
           <Link
-            className="text-brand-red self-center hover:underline font-semibold xl:text-sm lg:text-sm md:text-xs text-[0.1rem]"
+            className="text-brand-red self-center hover:underline font-semibold xl:text-sm lg:text-sm text-xs"
             to={Contents.header.products.links[i18next.language]}
           >
             {t('header.products')}
           </Link>
           <BiChevronRight className="text-zinc-400 self-center text-lg" />
-          <h2 className="text-zinc-500 self-center font-semibold xl:text-sm lg:text-sm md:text-xs text-[0.1rem]">
+          <h2 className="text-zinc-500 self-center font-semibold xl:text-sm lg:text-sm text-xs">
             {product.productTitle[i18next.language]}
           </h2>
         </div>
@@ -108,7 +108,7 @@ export default function ProductPage() {
             src={product.productImage || Images.placeholder}
             className={`${
               product.productImage ? 'object-cover' : 'object-contain p-20'
-            } w-full transition-all duration-200 object-center h-full xl:max-h-[30rem] lg:max-h-[30rem] max-h-[20rem]`}
+            } w-full transition-all duration-200 object-center xl:h-[30rem] lg:h-[30rem] h-[20rem]`}
             alt={product.productSlug}
           />
         </div>
