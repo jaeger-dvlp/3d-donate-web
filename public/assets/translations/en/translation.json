@@ -7,6 +7,7 @@
     "to-home": "Go to Homepage",
     "read-more": "Read More",
     "send": "Send",
+    "complete": "Complete",
     "okay": "Okay"
   },
   "errors": {
@@ -25,7 +26,9 @@
   "labels": {
     "cart-empty": "Your cart is empty.",
     "contact-us": "Contact Us",
-    "no-product-found-search": "We could not found the product you're looking for."
+    "no-product-found-search": "We could not found the product you're looking for.",
+    "order-sending": "Sending..",
+    "order-sent": "Your order has been sent successfully."
   },
   "forms": {
     "contact-form": {
@@ -53,6 +56,42 @@
         "formMessage": {
           "label": "Message",
           "placeholder": "We listening to you..."
+        }
+      }
+    },
+    "checkout-form": {
+      "inputs": {
+        "emailAddress": {
+          "label": "E-Mail Address",
+          "placeholder": "example@mail.com"
+        },
+        "fullName": {
+          "label": "Name & Surname",
+          "placeholder": "John Doe"
+        },
+        "phoneNumber": {
+          "label": "Phone Number",
+          "placeholder": "e.g. 999-999-9999"
+        },
+        "personAddress": {
+          "label": "Address",
+          "placeholder": "e.g. Berlin / Germany / No 223.."
+        },
+        "orderNotes": {
+          "label": "Order Notes",
+          "placeholder": "Product size etc.."
+        },
+        "country": {
+          "label": "Country/Region",
+          "placeholder": "Turkey"
+        },
+        "province": {
+          "label": "Province",
+          "placeholder": "Istanbul"
+        },
+        "postCode": {
+          "label": "Post Code",
+          "placeholder": "e.g. 12345"
         }
       }
     }
@@ -105,6 +144,9 @@
       "header": "Discover our articles..",
       "description": "Discover our informative articles.",
       "our-blog": "Our Blog"
+    },
+    "checkout": {
+      "header": "Checkout"
     },
     "not-found": {
       "description": "The page you're looking for is not found."
