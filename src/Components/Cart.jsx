@@ -5,7 +5,10 @@ import React, { useContext, useEffect, useState } from 'react';
 
 import { BsCart2, BsCheckLg, BsTrashFill } from 'react-icons/bs';
 import { IoIosClose } from 'react-icons/io';
+import { Link } from 'react-router-dom';
 import MainContext from '../Contexts/MainContext';
+
+import Contents from '../Content';
 
 export default function Cart() {
   const [cartActivity, setCartActivity] = useState(false);
@@ -39,12 +42,12 @@ export default function Cart() {
             {myCart.productTitle[i18next.language]}
           </h2>
           <div className="col-span-full grid grid-cols-2 gap-x-3">
-            <button
-              className="w-full flex justify-center text-center transition-all duration-150 hover:bg-green-200 active:scale-90 bg-green-100 rounded-lg p-2 text-green-400"
-              type="button"
+            <Link
+              to={Contents.pages.checkout.links[i18next.language]}
+              className="w-full flex justify-center  text-center transition-all duration-150 hover:bg-green-200 active:scale-90 bg-green-100 rounded-lg p-2 text-green-400"
             >
               <BsCheckLg className="self-center" />
-            </button>
+            </Link>
             <button
               className="w-full flex justify-center text-center transition-all duration-150 hover:bg-zinc-200 active:scale-90 bg-zinc-100 rounded-lg p-2 text-zinc-400"
               type="button"
