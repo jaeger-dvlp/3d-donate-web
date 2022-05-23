@@ -162,6 +162,14 @@ const postBody = [
 ];
 
 const Contents = {
+  pages: {
+    checkout: {
+      links: {
+        tr: '/tr/checkout',
+        en: '/checkout',
+      },
+    },
+  },
   header: {
     homepage: {
       links: {
