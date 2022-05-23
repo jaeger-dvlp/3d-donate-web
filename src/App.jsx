@@ -10,6 +10,7 @@ import Blog from './Pages/Blog';
 import Contact from './Pages/Contact';
 import Homepage from './Pages/Homepage';
 import MyCart from './Pages/MyCart';
+import Checkout from './Pages/Checkout';
 import NotFound from './Pages/NotFound';
 import PostPage from './Pages/PostPage';
 import ProductPage from './Pages/ProductPage';
@@ -36,6 +37,7 @@ function App() {
           />
           <Route exact path={`${lang}/blog/:postSlug`} component={PostPage} />
           <Route exact path={`${lang}/cart`} component={MyCart} />
+          <Route exact path={`${lang}/checkout`} component={Checkout} />
           <Route exact path={`${lang}/*`} component={NotFound} />
         </Switch>
         <Footer />
