@@ -21,6 +21,10 @@ const MockProducts = [
     },
     productSlug: 'adaptive-pencil-holder',
     productImage: Images.MockProduct2.toString(),
+    productDescription: {
+      tr: 'Eases the use of pen/paint brush for individuals who work in an office environment with gripping problems.\n\nDoesn’t contains any hazardous material.\nIt is preferred for academic development and participation in artistic activities.\nCan be used with any pen/paint brush.\n\nDesigner: Luca Parmegiani\nTasarımcı: Luca Parmegian\nWebsite: Myminifactory',
+      en: 'Eases the use of pen/paint brush for individuals who work in an office environment with gripping problems.\n\nDoesn’t contains any hazardous material.\nIt is preferred for academic development and participation in artistic activities.\nCan be used with any pen/paint brush.\n\nDesigner: Luca Parmegiani\nTasarımcı: Luca Parmegian\nWebsite: Myminifactory',
+    },
     modelId: 'STLOBJ002',
   },
   {
@@ -30,6 +34,10 @@ const MockProducts = [
     },
     productSlug: 'education-set-1',
     productImage: Images.EducationSet1.toString(),
+    productDescription: {
+      tr: 'Eases the use of pen/paint brush for individuals who work in an office environment with gripping problems.\n\nDoesn’t contains any hazardous material.\nIt is preferred for academic development and participation in artistic activities.\nCan be used with any pen/paint brush.\n\nDesigner: Luca Parmegiani\nTasarımcı: Luca Parmegian\nWebsite: Myminifactory',
+      en: 'Eases the use of pen/paint brush for individuals who work in an office environment with gripping problems.\n\nDoesn’t contains any hazardous material.\nIt is preferred for academic development and participation in artistic activities.\nCan be used with any pen/paint brush.\n\nDesigner: Luca Parmegiani\nTasarımcı: Luca Parmegian\nWebsite: Myminifactory',
+    },
     modelId: null,
   },
   {
@@ -39,6 +47,10 @@ const MockProducts = [
     },
     productSlug: 'bird-house',
     productImage: Images.BirdHouse.toString(),
+    productDescription: {
+      tr: 'Eases the use of pen/paint brush for individuals who work in an office environment with gripping problems.\n\nDoesn’t contains any hazardous material.\nIt is preferred for academic development and participation in artistic activities.\nCan be used with any pen/paint brush.\n\nDesigner: Luca Parmegiani\nTasarımcı: Luca Parmegian\nWebsite: Myminifactory',
+      en: 'Eases the use of pen/paint brush for individuals who work in an office environment with gripping problems.\n\nDoesn’t contains any hazardous material.\nIt is preferred for academic development and participation in artistic activities.\nCan be used with any pen/paint brush.\n\nDesigner: Luca Parmegiani\nTasarımcı: Luca Parmegian\nWebsite: Myminifactory',
+    },
     modelId: null,
   },
 ];
