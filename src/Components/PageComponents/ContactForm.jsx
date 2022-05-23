@@ -1,14 +1,16 @@
 /* eslint-disable implicit-arrow-linebreak */
 import { t } from 'i18next';
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useContext, useEffect, useRef, useState } from 'react';
 
 import { FiMail } from 'react-icons/fi';
 import { BsFillTelephoneFill } from 'react-icons/bs';
 import { FaMapMarkerAlt } from 'react-icons/fa';
 import { BiMailSend } from 'react-icons/bi';
+import MainContext from '../../Contexts/MainContext';
 
 export default function ContactForm() {
   const contactForm = useRef();
+  const { popup, setPopup } = useContext(MainContext);
   const [contactDetails, setContactDetails] = useState({
     fullName: '',
     emailAddress: '',
@@ -20,6 +22,21 @@ export default function ContactForm() {
   const submitContactForm = (e) => {
     e.preventDefault();
     // axios.post etc.
+    setPopup({
+      ...popup,
+      status: 'loading',
+      isVisible: true,
+      text: t('labels.contact-sending'),
+    });
+
+    setTimeout(() => {
+      setPopup({
+        ...popup,
+        status: 'error',
+        isVisible: true,
+        text: t('labels.contact-sent-failed'),
+      });
+    }, 2000);
   };
 
   useEffect(() => {
@@ -123,8 +140,9 @@ export default function ContactForm() {
                 placeholder={t(
                   'forms.contact-form.inputs.phoneNumber.placeholder',
                 )}
-                type="tel"
+                type="text"
                 name="phone"
+                pattern="[0-9]+"
                 required
                 onChange={(e) => {
                   setContactDetails({
