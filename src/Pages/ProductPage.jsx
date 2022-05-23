@@ -13,7 +13,7 @@ import NotFound from './NotFound';
 
 export default function ProductPage() {
   const [product, setProduct] = React.useState('loading');
-  const { setPopup } = useContext(CartContext);
+  const { myCart, setMyCart, popup, setPopup } = useContext(CartContext);
   const params = useParams();
   const { pSlug } = params;
 
@@ -24,6 +24,20 @@ export default function ProductPage() {
       );
     }, 3000);
   }, []);
+
+  const updateCart = () => {
+    if (!myCart) {
+      setMyCart(product);
+    } else if (myCart === product) {
+      setPopup({
+        ...popup,
+        isVisible: true,
+        text: t('errors.already-in-cart'),
+      });
+    } else {
+      setPopup({ ...popup, isVisible: true, text: t('errors.max-cart-one') });
+    }
+  };
 
   if (product === null) {
     return <NotFound />;
@@ -60,7 +74,7 @@ export default function ProductPage() {
 
   return (
     <div className="min-h-[70vh] fade-in-slow font-pop xl:pt-36 lg:pt-36 pt-28 w-full flex flex-wrap justify-center content-start p-0 m-0">
-      <div className="w-full xl:max-w-7xl lg:max-w-7xl max-w-lg grid xl:grid-cols-2 lg:grid-cols-2 grid-cols-1 place-content-start place-items-start p-5 gap-5">
+      <div className="w-full xl:max-w-6xl lg:max-w-6xl max-w-lg grid xl:grid-cols-2 lg:grid-cols-2 grid-cols-1 place-content-start place-items-start p-5 gap-5">
         <div className="w-full col-span-full flex justify-start content-center gap-1">
           <Link
             className="text-brand-red self-center hover:underline font-semibold xl:text-sm lg:text-sm text-xs"
@@ -109,6 +123,21 @@ export default function ProductPage() {
             } w-full transition-all duration-200 object-center xl:h-[30rem] lg:h-[30rem] h-[20rem]`}
             alt={product.productSlug}
           />
+        </div>
+        <div className="w-full grid grid-cols-1 place-content-start place-items-start gap-5">
+          <h1 className="text-brand-red xl:text-2xl lg:text-2xl text-xl font-semibold">
+            {product.productTitle[i18next.language]}
+          </h1>
+          <p className="text-zinc-400 whitespace-pre-wrap sm font-normal">
+            {product.productDescription[i18next.language]}
+          </p>
+          <button
+            type="button"
+            onClick={() => updateCart()}
+            className="p-2 text-md focus:ring-2 ring-brand-red/30 active:scale-90 font-semibold transition-all duration-200 rounded-lg w-full max-w-[8rem] border border-brand-red/50 text-white bg-brand-red hover:brightness-90"
+          >
+            {t('buttons.add-to-cart')}
+          </button>
         </div>
       </div>
     </div>
