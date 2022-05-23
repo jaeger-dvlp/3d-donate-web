@@ -1,5 +1,3 @@
-/* eslint-disable object-curly-newline */
-/* eslint-disable operator-linebreak */
 import i18next, { t } from 'i18next';
 import React, { useContext, useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
