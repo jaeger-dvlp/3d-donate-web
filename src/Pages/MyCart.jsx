@@ -3,6 +3,7 @@ import React, { useContext, useEffect, useState } from 'react';
 
 import { BsCheckLg, BsTrashFill } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
+import Contents from '../Content';
 import MainContext from '../Contexts/MainContext';
 
 export default function MyCart() {
@@ -29,12 +30,12 @@ export default function MyCart() {
             </Link>
           </div>
           <div className="w-full grid grid-cols-2 place-content-start place-items-start gap-3">
-            <button
+            <Link
+              to={Contents.pages.checkout.links[i18next.language]}
               className="w-full flex justify-center text-center transition-all duration-150 hover:bg-green-200 active:scale-90 bg-green-100 rounded-lg p-2 text-green-400"
-              type="button"
             >
               <BsCheckLg className="self-center" />
-            </button>
+            </Link>
             <button
               className="w-full flex justify-center text-center transition-all duration-150 hover:bg-zinc-200 active:scale-90 bg-zinc-100 rounded-lg p-2 text-zinc-400"
               type="button"
