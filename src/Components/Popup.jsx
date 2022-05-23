@@ -40,7 +40,7 @@ export default function Popup() {
           <button
             onClick={() => setPopup({ ...popup, isVisible: false })}
             type="button"
-            className="p-3 focus:ring-2 ring-brand-red/30 active:scale-90 font-semibold hover:bg-brand-red/20 transition-all duration-100 rounded-lg w-full max-w-[8rem] border border-brand-red/50 bg-white text-brand-red"
+            className="p-3 fade-in focus:ring-2 ring-brand-red/30 active:scale-90 font-semibold hover:bg-brand-red/20 transition-all duration-100 rounded-lg w-full max-w-[8rem] border border-brand-red/50 bg-white text-brand-red"
           >
             {t('buttons.okay')}
           </button>
