@@ -18,6 +18,7 @@
   "plugins": ["react"],
   "rules": {
     "prettier/prettier": ["error", { "singleQuote": true, "parser": "flow" }],
+    "object-curly-newline": "off",
     "no-unused-vars": "warn",
     "no-console": "warn",
     "react/prop-types": "off"
