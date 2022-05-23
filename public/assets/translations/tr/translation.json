@@ -28,7 +28,10 @@
     "contact-us": "İletişim",
     "no-product-found-search": "Aradığınız kriterlere uygun ürün bulunamadı.",
     "order-sending": "Siparişiniz tamamlanıyor...",
-    "order-sent": "Siparişiniz başarıyla gönderildi."
+    "order-sent": "Siparişiniz başarıyla gönderildi.",
+    "contact-sending": "İletişim talebi gönderiliyor..",
+    "contact-sent-success": "İletişim talebiniz başarıyla gönderildi.",
+    "contact-sent-failed": "İletişim talebiniz gönderilirken bir hata oluştu."
   },
   "forms": {
     "contact-form": {

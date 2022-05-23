@@ -28,7 +28,10 @@
     "contact-us": "Contact Us",
     "no-product-found-search": "We could not found the product you're looking for.",
     "order-sending": "Sending..",
-    "order-sent": "Your order has been sent successfully."
+    "order-sent": "Your order has been sent successfully.",
+    "contact-sending": "Contact request sending..",
+    "contact-sent-success": "Contact request successfully sent.",
+    "contact-sent-failed": "An error occurred while sending your contact request."
   },
   "forms": {
     "contact-form": {
