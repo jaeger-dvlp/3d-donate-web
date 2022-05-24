@@ -15,16 +15,16 @@ export default function MyCart() {
         <div className="mt-5 w-full flex flex-wrap gap-5 justify-start content-center">
           <img
             className="xl:w-20 xl:h-20 lg:w-20 lg:h-20 w-full h-[14rem] object-cover border-2 rounded-xl shadow-xl self-center"
-            alt={myCart.productSlug}
-            src={myCart.productImage}
+            alt={myCart.slug}
+            src={myCart.image}
           />
           <div className="grid grid-cols-1 place-content-center place-items-start">
             <h1 className="self-center text-zinc-600 font-medium text-md">
-              {myCart.productTitle[i18next.language]}
+              {myCart.title[i18next.language]}
             </h1>
             <Link
               className="self-center mt-1 text-brand-red hover:underline text-sm"
-              to={`/products/${myCart.productSlug}`}
+              to={`/products/${myCart.slug}`}
             >
               {t('buttons.see-details')}
             </Link>

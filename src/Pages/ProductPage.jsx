@@ -19,9 +19,7 @@ export default function ProductPage() {
 
   useEffect(() => {
     setTimeout(() => {
-      setProduct(
-        MockProduct.find(({ productSlug }) => productSlug === pSlug) || null,
-      );
+      setProduct(MockProduct.find(({ slug }) => slug === pSlug) || null);
     }, 3000);
   }, []);
 
@@ -91,7 +89,7 @@ export default function ProductPage() {
           </Link>
           <BiChevronRight className="text-zinc-400 self-center text-lg" />
           <h2 className="text-zinc-500 self-center font-semibold xl:text-sm lg:text-sm text-xs">
-            {product.productTitle[i18next.language]}
+            {product.title[i18next.language]}
           </h2>
         </div>
         <div className="w-full xl:max-w-lg lg:max-w-lg relative rounded-2xl shadow-xl border-4 border-zinc-200 overflow-hidden flex flex-wrap justify-center content-start">
@@ -117,19 +115,19 @@ export default function ProductPage() {
           </button>
 
           <img
-            src={product.productImage || Images.placeholder}
+            src={product.image || Images.placeholder}
             className={`${
-              product.productImage ? 'object-cover' : 'object-contain p-20'
+              product.image ? 'object-cover' : 'object-contain p-20'
             } w-full transition-all duration-200 object-center xl:h-[30rem] lg:h-[30rem] h-[20rem]`}
-            alt={product.productSlug}
+            alt={product.slug}
           />
         </div>
         <div className="w-full grid grid-cols-1 place-content-start place-items-start gap-5">
           <h1 className="text-brand-red xl:text-2xl lg:text-2xl text-xl font-semibold">
-            {product.productTitle[i18next.language]}
+            {product.title[i18next.language]}
           </h1>
           <p className="text-zinc-400 whitespace-pre-wrap sm font-normal">
-            {product.productDescription[i18next.language]}
+            {product.description[i18next.language]}
           </p>
           <button
             type="button"
