@@ -26,11 +26,11 @@ export default function Cart() {
     setCartComponent(
       myCart ? (
         <div className="fade-in grid grid-cols-5 gap-x-5 gap-y-5">
-          {myCart.productImage ? (
+          {myCart.image ? (
             <img
-              className="col-span-2 w-16 h-16 rounded-xl border-brand-red/30 border"
-              src={myCart.productImage}
-              alt={myCart.productTitle[i18next.language]}
+              className="col-span-2 object-cover w-16 h-16 rounded-xl border-brand-red/30 border"
+              src={myCart.image}
+              alt={myCart.title[i18next.language]}
             />
           ) : (
             <div className="w-16 h-16 col-span-2 rounded-xl border-brand-red/30 border grid grid-cols-1 place-content-center place-items-center">
@@ -39,7 +39,7 @@ export default function Cart() {
           )}
 
           <h2 className="w-full text-zinc-500 text-sm self-center col-span-3 text-left">
-            {myCart.productTitle[i18next.language]}
+            {myCart.title[i18next.language]}
           </h2>
           <div className="col-span-full grid grid-cols-2 gap-x-3">
             <Link

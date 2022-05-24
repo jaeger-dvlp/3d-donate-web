@@ -25,14 +25,17 @@ export default function ProductFilter({ props }) {
   useEffect(() => {
     const searchProduct = (e) => {
       e.preventDefault();
-      setSearchVal(filterVal);
+      setSearchVal({
+        searchValue: filterVal,
+        searchCategory: selectedProductCategory,
+      });
     };
 
     productSearch.current.addEventListener('submit', searchProduct);
 
     return () =>
       productSearch.current.removeEventListener('submit', searchProduct);
-  }, [searchVal, filterVal]);
+  }, [searchVal, filterVal, selectedProductCategory]);
 
   return (
     <div className="w-full max-w-7xl grid grid-cols-1 p-0 gap-5 place-content-start place-items-start">
