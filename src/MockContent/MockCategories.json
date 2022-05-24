@@ -2,11 +2,21 @@
   {
     "tr": "Oyuncak",
     "en": "Toys",
-    "slug": "toy-products"
+    "slug": "toy"
+  },
+  {
+    "tr": "Sağlık",
+    "en": "Health",
+    "slug": "health"
   },
   {
     "tr": "Hayvan",
     "en": "Animal",
-    "slug": "animal-products"
+    "slug": "animal"
+  },
+  {
+    "tr": "Eğitim",
+    "en": "Education",
+    "slug": "education"
   }
 ]
