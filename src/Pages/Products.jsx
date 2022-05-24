@@ -14,26 +14,52 @@ import ProductCard from '../Components/ProductCard';
 import MockProducts from '../MockContent/MockProduct';
 
 export default function Products() {
-  const [searchVal, setSearchVal] = useState(null);
+  const [searchVal, setSearchVal] = useState({
+    searchValue: null,
+    searchCategory: { slug: 'all-products' },
+  });
 
   const AllProducts = () => {
-    if (searchVal) {
-      if (
-        MockProducts.filter(({ productTitle }) =>
-          productTitle[i18next.language]
-            .toLowerCase()
-            .includes(searchVal.toLowerCase()),
-        ).length > 0
-      ) {
-        return MockProducts.map((product) => {
-          if (
-            product.productTitle[i18next.language]
+    if (searchVal.searchValue) {
+      if (searchVal.searchCategory.slug === 'all-products') {
+        if (
+          MockProducts.filter(({ title }) =>
+            title[i18next.language]
               .toLowerCase()
-              .includes(searchVal.toLowerCase())
-          ) {
-            return <ProductCard incomingProduct={product} />;
-          }
-        });
+              .includes(searchVal.searchValue.toLowerCase()),
+          ).length > 0
+        ) {
+          return MockProducts.map((product) => {
+            if (
+              product.title[i18next.language]
+                .toLowerCase()
+                .includes(searchVal.searchValue.toLowerCase())
+            ) {
+              return <ProductCard incomingProduct={product} />;
+            }
+          });
+        }
+      } else if (searchVal.searchCategory !== 'all-products') {
+        if (
+          MockProducts.filter(({ title }) =>
+            title[i18next.language]
+              .toLowerCase()
+              .includes(searchVal.searchValue.toLowerCase()),
+          ).length > 0
+        ) {
+          return MockProducts.map((product) => {
+            if (
+              product.title[i18next.language]
+                .toLowerCase()
+                .includes(searchVal.searchValue.toLowerCase()) &&
+              product.categories.find(
+                ({ slug }) => slug === searchVal.searchCategory.slug,
+              )
+            ) {
+              return <ProductCard incomingProduct={product} />;
+            }
+          });
+        }
       }
       return <NoProducts />;
     }
