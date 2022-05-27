@@ -1,5 +1,10 @@
 import Logo from './img/brand-logo.png';
 
+/* PDF's */
+import PDFSupportUs from './pdf/support-us.pdf';
+import PDFHowToSupportUs from './pdf/how-to-support-us.pdf';
+import PDFCooperation from './pdf/cooperation.pdf';
+
 import Homebanner from './img/homepage/homebanner.jpg';
 import Galata from './img/homepage/galata.jpg';
 
@@ -68,6 +73,11 @@ import automaticWaterCup from './img/products/automaticWaterCup.webp';
 
 const Images = {
   Logo,
+  pdfs: {
+    PDFSupportUs,
+    PDFHowToSupportUs,
+    PDFCooperation,
+  },
   Homebanner,
   Galata,
   SupportUs,
