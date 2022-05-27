@@ -10,6 +10,14 @@ import HowToSupport from './img/homepage/howtosupport.jpg';
 import page404 from './img/mix/404.svg';
 import placeholder from './img/mix/placeholder.svg';
 
+/* Blog Images */
+import ourServices from './img/blog/our-services.webp';
+import aboutOurProducts from './img/blog/about-our-products.webp';
+import productsThatMakesLifeEasier from './img/blog/products-that-makes-life-easier.webp';
+import blogContent1 from './img/blog/blog-content-1.webp';
+import blogContent2 from './img/blog/blog-content-2.webp';
+import blogContent3 from './img/blog/blog-content-3.webp';
+
 /* Product Images */
 import animalCell from './img/products/animalCell.webp';
 import humanSkull from './img/products/humanSkull.webp';
@@ -67,6 +75,14 @@ const Images = {
   HowToSupport,
   page404,
   placeholder,
+  blogImages: {
+    ourServices,
+    aboutOurProducts,
+    productsThatMakesLifeEasier,
+    blogContent1,
+    blogContent2,
+    blogContent3,
+  },
   productsImages: {
     animalCell,
     humanSkull,
