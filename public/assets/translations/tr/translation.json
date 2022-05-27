@@ -20,7 +20,7 @@
   },
   "components": {
     "cart": {
-      "title": "Sepetim"
+      "title": "İhtiyaç Sepeti"
     }
   },
   "labels": {
@@ -104,8 +104,9 @@
     "products": "Ürünler",
     "contact": "İletişim",
     "whatarewedoing": "Neler Yapıyoruz?",
+    "howcanyousupport": "Nasıl Destek Olabilirim?",
     "blog": "Blog",
-    "cart": "Sepetim"
+    "cart": "İhtiyaç Sepeti"
   },
   "pages": {
     "homepage": {
