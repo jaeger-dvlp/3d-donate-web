@@ -3,7 +3,7 @@ import { t } from 'i18next';
 import React, { useContext, useEffect, useRef, useState } from 'react';
 
 import { FiMail } from 'react-icons/fi';
-import { BsFillTelephoneFill } from 'react-icons/bs';
+// import { BsFillTelephoneFill } from 'react-icons/bs';
 import { FaMapMarkerAlt } from 'react-icons/fa';
 import { BiMailSend } from 'react-icons/bi';
 import MainContext from '../../Contexts/MainContext';
@@ -59,8 +59,10 @@ export default function ContactForm() {
           <p className="text-left text-sm text-zinc-500">
             {t('forms.contact-form.info-column.description')}
           </p>
+          {/*
           <div className="w-full mt-10 flex justify-start content-center gap-x-2">
-            <BsFillTelephoneFill className="p-2 self-center text-3xl bg-brand-red/10 rounded-md text-brand-red" />
+            <BsFillTelephoneFill className="p-2 self-center text-3xl
+             bg-brand-red/10 rounded-md text-brand-red" />
             <a
               className="text-xs self-center hover:underline text-zinc-500"
               href="tel:+90 (532) 323 3232"
@@ -68,13 +70,14 @@ export default function ContactForm() {
               +90 (532) 323 3232
             </a>
           </div>
+         */}
           <div className="w-full flex justify-start content-center gap-x-2">
             <FiMail className="p-2 self-center text-3xl bg-brand-red/10 rounded-md text-brand-red" />
             <a
               className="text-xs self-center hover:underline text-zinc-500"
-              href="mailto:3ddonate@noreply.com"
+              href="mailto:info@3ddonate.com"
             >
-              3ddonate@noreply.com
+              info@3ddonate.com
             </a>
           </div>
           <div className="w-full flex justify-start content-center gap-x-2">
