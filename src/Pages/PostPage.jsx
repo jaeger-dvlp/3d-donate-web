@@ -3,6 +3,7 @@
 import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import i18next from 'i18next';
+import { Helmet } from 'react-helmet';
 
 import NotFound from './NotFound';
 import Contents from '../Content';
@@ -52,16 +53,21 @@ export default function PostPage() {
     );
   }
   return (
-    <div className="min-h-[70vh] fade-in-slow font-pop xl:pt-36 lg:pt-36 pt-28 w-full flex flex-wrap justify-center content-start p-0 m-0">
-      <div className="w-full p-5 max-w-3xl grid grid-cols-1 place-content-start place-items-center">
-        <h1 className="text-2xl text-brand-red mb-5 font-semibold">
-          {post.title[i18next.language]}
-        </h1>
-        <p
-          dangerouslySetInnerHTML={{ __html: post.body[i18next.language] }}
-          className="text-zinc-500 post-body whitespace-pre-wrap"
-        />
+    <>
+      <Helmet>
+        <title>{`3D Donate | ${post.title[i18next.language]}`}</title>
+      </Helmet>
+      <div className="min-h-[70vh] fade-in-slow font-pop xl:pt-36 lg:pt-36 pt-28 w-full flex flex-wrap justify-center content-start p-0 m-0">
+        <div className="w-full p-5 max-w-3xl grid grid-cols-1 place-content-start place-items-center">
+          <h1 className="text-2xl text-brand-red mb-5 font-semibold">
+            {post.title[i18next.language]}
+          </h1>
+          <p
+            dangerouslySetInnerHTML={{ __html: post.body[i18next.language] }}
+            className="text-zinc-500 post-body whitespace-pre-wrap"
+          />
+        </div>
       </div>
-    </div>
+    </>
   );
 }

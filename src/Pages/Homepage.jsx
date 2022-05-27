@@ -1,5 +1,6 @@
 import React from 'react';
 import i18next, { t } from 'i18next';
+import Helmet from 'react-helmet';
 
 import { MdOutlineFileDownload } from 'react-icons/md';
 
@@ -7,10 +8,14 @@ import Images from '../Images';
 import MiniProducts from '../Components/PageComponents/MiniProducts';
 import ContactForm from '../Components/PageComponents/ContactForm';
 import MiniBlogs from '../Components/PageComponents/MiniBlogs';
+import Contents from '../Content';
 
 export default function Homepage() {
   return (
     <>
+      <Helmet>
+        <title>{Contents.header.homepage.title[i18next.language]}</title>
+      </Helmet>
       <div
         style={{ backgroundImage: `url(${Images.Homebanner})` }}
         className="font-pop p-5 pt-20 w-full flex flex-wrap bg-cover bg-center justify-center content-end min-h-screen bg-gradient-to-r from-white to-brand-red/10"
@@ -46,7 +51,10 @@ export default function Homepage() {
       </div>
       <MiniProducts />
       <MiniBlogs />
-      <div className="bg-zinc-100 font-pop grid grid-cols-1 place-content-start place-items-center py-16 px-5">
+      <div
+        id="how-can-you-support"
+        className="bg-zinc-100 font-pop grid grid-cols-1 place-content-start place-items-center py-16 px-5"
+      >
         <div className="w-full max-w-xl grid grid-cols-1 place-content-start place-items-center gap-3">
           <h1 className="text-brand-red text-center text-3xl font-bold">
             {t('pages.homepage.section-how-help.header')}
@@ -77,8 +85,9 @@ export default function Homepage() {
             </p>
             {i18next.language !== 'en' && (
               <a
-                download
-                href="x"
+                href={Images.pdfs.PDFSupportUs}
+                target="_blank"
+                rel="noreferrer"
                 className="p-2 active:scale-90 flex mt-3 justify-center gap-1 text-center px-4 min-w-[6rem] transition-all duration-150 rounded-md hover:bg-brand-red/20 bg-brand-red/10 text-brand-red"
               >
                 {t('buttons.download-pdf')}
@@ -104,8 +113,9 @@ export default function Homepage() {
             </p>
             {i18next.language !== 'en' && (
               <a
-                download
-                href="x"
+                href={Images.pdfs.PDFCooperation}
+                target="_blank"
+                rel="noreferrer"
                 className="p-2 active:scale-90 flex mt-3 justify-center gap-1 text-center px-4 min-w-[6rem] transition-all duration-150 rounded-md hover:bg-brand-red/20 bg-brand-red/10 text-brand-red"
               >
                 {t('buttons.download-pdf')}
@@ -131,8 +141,9 @@ export default function Homepage() {
             </p>
             {i18next.language !== 'en' && (
               <a
-                download
-                href="x"
+                href={Images.pdfs.PDFHowToSupportUs}
+                target="_blank"
+                rel="noreferrer"
                 className="p-2 active:scale-90 flex mt-3 justify-center gap-1 text-center px-4 min-w-[6rem] transition-all duration-150 rounded-md hover:bg-brand-red/20 bg-brand-red/10 text-brand-red"
               >
                 {t('buttons.download-pdf')}

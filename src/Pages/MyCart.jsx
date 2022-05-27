@@ -1,5 +1,6 @@
 import i18next, { t } from 'i18next';
 import React, { useContext, useEffect, useState } from 'react';
+import { Helmet } from 'react-helmet';
 
 import { BsCheckLg, BsTrashFill } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
@@ -56,15 +57,20 @@ export default function MyCart() {
   }, [myCart]);
 
   return (
-    <div className="w-full min-h-[70vh] font-pop xl:pt-36 gap-14 lg:pt-36 pt-28 p-5 grid grid-cols-1 place-content-start place-items-center">
-      <div className="w-full max-w-[20rem] grid grid-cols-1 place-content-start place-items-center">
-        <div className="w-full pb-5 gap-3 grid grid-cols-1 place-content-start place-items-start">
-          <h1 className="text-2xl text-brand-red font-semibold">
-            {t('header.cart')}
-          </h1>
-          {cartProducts}
+    <>
+      <Helmet>
+        <title>{Contents.header.cart.title[i18next.language]}</title>
+      </Helmet>
+      <div className="w-full min-h-[70vh] font-pop xl:pt-36 gap-14 lg:pt-36 pt-28 p-5 grid grid-cols-1 place-content-start place-items-center">
+        <div className="w-full max-w-[20rem] grid grid-cols-1 place-content-start place-items-center">
+          <div className="w-full pb-5 gap-3 grid grid-cols-1 place-content-start place-items-start">
+            <h1 className="text-2xl text-brand-red font-semibold">
+              {t('header.cart')}
+            </h1>
+            {cartProducts}
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
