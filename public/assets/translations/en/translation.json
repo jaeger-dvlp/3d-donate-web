@@ -115,6 +115,12 @@
       "products": {
         "our-products": "Our Products"
       },
+      "galata": {
+        "description": [
+          "3DDonate.com, Occupational therapist İsmail İşler and Emre Akıncı PhD. was organized by Zaxe 3D with the support of Zaxe Z3 3D printers to produce products for all creatures in need, completely free of charge.",
+          "Our products are free of charge, including production and shipping services. It is produced with PLA or ABS filament depending on the need."
+        ]
+      },
       "section-how-help": {
         "header": "How can i support?",
         "sub-header": "Take action now.",

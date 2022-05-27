@@ -115,6 +115,12 @@
       "products": {
         "our-products": "Ürünlerimiz"
       },
+      "galata": {
+        "description": [
+          "3DDonate.com Ergoterapist İsmail İşler ve Emre Akıncı PhD. tarafından Zaxe 3D desteği ile Zaxe Z3 3D yazıcılarla tamamen ücretsiz olarak ihtiyaç sahibi tüm canlılara ürünler üretmek için organize edildi.",
+          "Ürünlerimiz üretim ve kargo hizmetleri dahil ücretsizdir.İhtiyaca bağlı olarak PLA veya ABS filament ile üretilmektedir."
+        ]
+      },
       "section-how-help": {
         "header": "Nasıl destek olabilirim?",
         "sub-header": "Hemen harekete geçin.",
