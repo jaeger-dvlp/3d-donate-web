@@ -1,5 +1,5 @@
 import React from 'react';
-import { t } from 'i18next';
+import i18next, { t } from 'i18next';
 
 import { MdOutlineFileDownload } from 'react-icons/md';
 
@@ -35,14 +35,10 @@ export default function Homepage() {
           <div className="p-5">
             <div className="w-full p-5 !text-xs bg-black/10 rounded-xl mt-0 grid gap-5 grid-cols-1 place-content-start place-items-center">
               <p className="text-center text-zinc-600 text-sm">
-                3DDonate.com Ergoterapist İsmail İşler ve Emre Akıncı PhD.
-                tarafından Zaxe 3D desteği ile Zaxe Z3 3D yazıcılarla tamamen
-                ücretsiz olarak ihtiyaç sahibi tüm canlılara ürünler üretmek
-                için organize edildi.
+                {t('pages.homepage.galata.description.0')}
               </p>
               <p className="text-center text-zinc-600 text-sm">
-                Ürünlerimiz üretim ve kargo hizmetleri dahil ücretsizdir.
-                İhtiyaca bağlı olarak PLA veya ABS filament ile üretilmektedir.
+                {t('pages.homepage.galata.description.1')}
               </p>
             </div>
           </div>
@@ -79,14 +75,16 @@ export default function Homepage() {
             <p className="text-zinc-500 w-full max-w-lg text-md font-light text-center">
               {t('pages.homepage.mini-sections.0.description')}
             </p>
-            <a
-              download
-              href="x"
-              className="p-2 active:scale-90 flex mt-3 justify-center gap-1 text-center px-4 min-w-[6rem] transition-all duration-150 rounded-md hover:bg-brand-red/20 bg-brand-red/10 text-brand-red"
-            >
-              {t('buttons.download-pdf')}
-              <MdOutlineFileDownload className="self-center" />
-            </a>
+            {i18next.language !== 'en' && (
+              <a
+                download
+                href="x"
+                className="p-2 active:scale-90 flex mt-3 justify-center gap-1 text-center px-4 min-w-[6rem] transition-all duration-150 rounded-md hover:bg-brand-red/20 bg-brand-red/10 text-brand-red"
+              >
+                {t('buttons.download-pdf')}
+                <MdOutlineFileDownload className="self-center" />
+              </a>
+            )}
           </div>
         </div>
         <div className="w-full gap-5 bg-white py-20 px-5 max-w-6xl grid xl:grid-cols-2 lg:grid-cols-2 grid-cols-1 place-content-start place-items-center">
@@ -104,14 +102,16 @@ export default function Homepage() {
             <p className="text-zinc-500 w-full max-w-lg text-md font-light text-center">
               {t('pages.homepage.mini-sections.1.description')}
             </p>
-            <a
-              download
-              href="x"
-              className="p-2 active:scale-90 flex mt-3 justify-center gap-1 text-center px-4 min-w-[6rem] transition-all duration-150 rounded-md hover:bg-brand-red/20 bg-brand-red/10 text-brand-red"
-            >
-              {t('buttons.download-pdf')}
-              <MdOutlineFileDownload className="self-center" />
-            </a>
+            {i18next.language !== 'en' && (
+              <a
+                download
+                href="x"
+                className="p-2 active:scale-90 flex mt-3 justify-center gap-1 text-center px-4 min-w-[6rem] transition-all duration-150 rounded-md hover:bg-brand-red/20 bg-brand-red/10 text-brand-red"
+              >
+                {t('buttons.download-pdf')}
+                <MdOutlineFileDownload className="self-center" />
+              </a>
+            )}
           </div>
         </div>
         <div className="w-full gap-5 bg-white py-20 px-5 max-w-6xl grid xl:grid-cols-2 lg:grid-cols-2 grid-cols-1 place-content-start place-items-center">
@@ -129,14 +129,16 @@ export default function Homepage() {
             <p className="text-zinc-500 w-full max-w-lg text-md font-light text-center">
               {t('pages.homepage.mini-sections.2.description')}
             </p>
-            <a
-              download
-              href="x"
-              className="p-2 active:scale-90 flex mt-3 justify-center gap-1 text-center px-4 min-w-[6rem] transition-all duration-150 rounded-md hover:bg-brand-red/20 bg-brand-red/10 text-brand-red"
-            >
-              {t('buttons.download-pdf')}
-              <MdOutlineFileDownload className="self-center" />
-            </a>
+            {i18next.language !== 'en' && (
+              <a
+                download
+                href="x"
+                className="p-2 active:scale-90 flex mt-3 justify-center gap-1 text-center px-4 min-w-[6rem] transition-all duration-150 rounded-md hover:bg-brand-red/20 bg-brand-red/10 text-brand-red"
+              >
+                {t('buttons.download-pdf')}
+                <MdOutlineFileDownload className="self-center" />
+              </a>
+            )}
           </div>
         </div>
       </div>

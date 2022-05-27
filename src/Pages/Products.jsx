@@ -47,18 +47,37 @@ export default function Products() {
               .includes(searchVal.searchValue.toLowerCase()),
           ).length > 0
         ) {
-          return MockProducts.map((product) => {
-            if (
-              product.title[i18next.language]
-                .toLowerCase()
-                .includes(searchVal.searchValue.toLowerCase()) &&
-              product.categories.find(
+          if (
+            MockProducts.find(({ categories }) =>
+              categories.find(
                 ({ slug }) => slug === searchVal.searchCategory.slug,
-              )
-            ) {
-              return <ProductCard incomingProduct={product} />;
+              ),
+            ) &&
+            MockProducts.find(({ title }) =>
+              title[i18next.language]
+                .toLowerCase()
+                .includes(searchVal.searchValue.toLowerCase()),
+            )
+          ) {
+            const products = [];
+            MockProducts.map((product) => {
+              if (
+                product.title[i18next.language]
+                  .toLowerCase()
+                  .includes(searchVal.searchValue.toLowerCase()) &&
+                product.categories.find(
+                  ({ slug }) => slug === searchVal.searchCategory.slug,
+                )
+              ) {
+                products.push(<ProductCard incomingProduct={product} />);
+              }
+            });
+
+            if (products.length > 0) {
+              return products;
             }
-          });
+            return <NoProducts />;
+          }
         }
       }
       return <NoProducts />;
