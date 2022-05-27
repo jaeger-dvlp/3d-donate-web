@@ -75,9 +75,9 @@ With this awareness, we identify their needs and produce products.\n
 <strong>Uyarı:</strong>\n
 www.3ddonate.com adresinden talep edilen ücretsiz ürünlerin 0-3 yaş aralığındaki
 çocuklarda kullanımı yasaktır. Cisimlerin ağızda tutulması, yutulması, parçaların kırılıp göz
-veya buruna kaçması gibi durumlarda www.3ddonate.com kesinlikle sorumlu değildir. Talep
-edilen ürünlerin amacı dışında kullanılması durumunda oluşabilecek problemler veya
-yaralanma, yaralama gibi durumlarda www.3ddonate.com kesinlikle sorumlu tutulamaz.
+veya buruna kaçması gibi durumlarda www.3ddonate.com kesinlikle sorumlu değildir.
+Talep edilen ürünlerin amacı dışında kullanılması durumunda oluşabilecek problemler
+veya yaralanma, yaralama gibi durumlarda www.3ddonate.com kesinlikle sorumlu tutulamaz.
 www.3ddonate.com sağladığı bu hizmette tüm yaş gruplarında oluşturacak sorunlar için
 sorumluluk kabul etmemektedir. www.3ddonate.com tarafından sağlanan sağlık hizmeti
 tedavi edici ekipman üretmez, rehabilitasyon sonrasında bireylerin günlük yaşam
@@ -111,39 +111,89 @@ const Contents = {
   },
   header: {
     homepage: {
+      title: {
+        tr: '3D Donate | Anasayfa',
+        en: '3D Donate | Homepage',
+      },
       links: {
         tr: '/tr/',
         en: '/',
       },
     },
     products: {
+      title: {
+        tr: '3D Donate | Ürünler',
+        en: '3D Donate | Products',
+      },
       links: {
         tr: '/tr/products/',
         en: '/products/',
       },
     },
     contact: {
+      title: {
+        tr: '3D Donate | İletişim',
+        en: '3D Donate | Contact',
+      },
       links: {
         tr: '/tr/contact/',
         en: '/contact/',
       },
     },
     whatarewedoing: {
+      title: {
+        tr: '3D Donate | Ne Yapıyoruz?',
+        en: '3D Donate | What are we doing?',
+      },
       links: {
-        tr: '/tr/blog/what-are-we-aiming-when-we-design-our-adaptive-products/',
-        en: '/blog/what-are-we-aiming-when-we-design-our-adaptive-products/',
+        tr: '/tr/#what-are-we-doing',
+        en: '/#what-are-we-doing',
+      },
+    },
+    howcanyousupport: {
+      title: {
+        tr: '3D Donate | Nasıl Destek Olabilirim?',
+        en: '3D Donate | How can you support?',
+      },
+      links: {
+        tr: '/tr/#how-can-you-support',
+        en: '/#how-can-you-support',
       },
     },
     blog: {
+      title: {
+        tr: '3D Donate | Blog',
+        en: '3D Donate | Blog',
+      },
       links: {
         tr: '/tr/blog/',
         en: '/blog/',
       },
     },
     cart: {
+      title: {
+        tr: '3D Donate | İhtiyaç Sepetim',
+        en: '3D Donate | My Cart',
+      },
       links: {
         tr: '/tr/cart/',
         en: '/cart/',
+      },
+    },
+    checkout: {
+      title: {
+        tr: '3D Donate | Siparişi Tamamla',
+        en: '3D Donate | Checkout',
+      },
+      links: {
+        tr: '/tr/checkout/',
+        en: '/checkout/',
+      },
+    },
+    notfound: {
+      title: {
+        tr: '3D Donate | 404',
+        en: '3D Donate | 404',
       },
     },
   },
