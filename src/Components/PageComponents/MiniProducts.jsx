@@ -11,6 +11,7 @@ export default function MiniProducts() {
   const mockProducts = [
     MockProducts.find(({ slug }) => slug === 'painting-apparatus'),
     MockProducts.find(({ slug }) => slug === 'wheeled-systems'),
+    MockProducts.find(({ slug }) => slug === 'bird-house'),
   ];
 
   useEffect(() => {
