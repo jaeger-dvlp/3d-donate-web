@@ -25,7 +25,7 @@ export default function MiniBlogs() {
       <div className="w-full max-w-7xl grid grid-cols-1 place-content-start place-items-center">
         <div className="text-center w-full max-w-4xl gap-16 gap-x-0 grid grid-cols-1 place-content-start place-items-center">
           <h1 className="p-3 rounded-lg w-full max-w-[15rem] bg-brand-red/10 text-brand-red font-bold text-xl">
-            {t('pages.blog.our-blog')}
+            {t('header.whatarewedoing')}
           </h1>
           {posts}
         </div>
