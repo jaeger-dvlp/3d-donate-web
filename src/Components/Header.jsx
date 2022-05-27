@@ -7,6 +7,7 @@ import { MdLanguage } from 'react-icons/md';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { IoIosClose } from 'react-icons/io';
 import { Link, useLocation } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 import Images from '../Images';
 import Contents from '../Content';
@@ -34,7 +35,9 @@ export default function Header() {
 
   useEffect(() => {
     setMobileMenu(false);
-    window.scrollTo({ top: 0, behavior: 'auto' });
+    if (!pathname.hash) {
+      window.scrollTo({ top: 0, behavior: 'auto' });
+    }
   }, [pathname]);
 
   return (
@@ -55,7 +58,7 @@ export default function Header() {
         <div className="xl:flex lg:flex hidden flex-wrap content-center justify-end gap-x-5">
           <Link
             to={Contents.header.homepage.links[i18next.language]}
-            className="p-1 text-center active:scale-90 px-4 min-w-[6rem] transition-all duration-150 rounded-md hover:bg-brand-red/20 bg-brand-red/10 text-brand-red"
+            className="p-1 xl:block hidden text-center active:scale-90 px-4 min-w-[6rem] transition-all duration-150 rounded-md hover:bg-brand-red/20 bg-brand-red/10 text-brand-red"
           >
             {t('header.homepage')}
           </Link>
@@ -71,15 +74,23 @@ export default function Header() {
           >
             {t('header.contact')}
           </Link>
-          <Link
+          <HashLink
             to={Contents.header.whatarewedoing.links[i18next.language]}
             className="p-1 text-center active:scale-90 px-4 min-w-[6rem] transition-all duration-150 rounded-md hover:bg-brand-red/20 bg-brand-red/10 text-brand-red"
           >
             {t('header.whatarewedoing')}
-          </Link>
+          </HashLink>
+          <HashLink
+            to={Contents.header.howcanyousupport.links[i18next.language]}
+            className="p-1 text-center active:scale-90 px-4 min-w-[6rem] transition-all duration-150 rounded-md hover:bg-brand-red/20 bg-brand-red/10 text-brand-red"
+          >
+            {t('header.howcanyousupport')}
+          </HashLink>
           <Link
             to={Contents.header.blog.links[i18next.language]}
-            className="p-1 text-center active:scale-90 px-4 min-w-[6rem] transition-all duration-150 rounded-md hover:bg-brand-red/20 bg-brand-red/10 text-brand-red"
+            className="p-1 text-center active:scale-90 px-4 min-w-[6rem]
+            transition-all duration-150 rounded-md hover:bg-brand-red/20
+            bg-brand-red/10 text-brand-red"
           >
             {t('header.blog')}
           </Link>
@@ -159,12 +170,18 @@ export default function Header() {
           >
             {t('header.contact')}
           </Link>
-          <Link
+          <HashLink
             to={Contents.header.whatarewedoing.links[i18next.language]}
             className="p-1 text-center active:scale-90 px-4 w-full transition-all duration-150 rounded-md hover:bg-brand-red/20 bg-brand-red/10 text-brand-red"
           >
             {t('header.whatarewedoing')}
-          </Link>
+          </HashLink>
+          <HashLink
+            to={Contents.header.howcanyousupport.links[i18next.language]}
+            className="p-1 text-center active:scale-90 px-4 w-full transition-all duration-150 rounded-md hover:bg-brand-red/20 bg-brand-red/10 text-brand-red"
+          >
+            {t('header.howcanyousupport')}
+          </HashLink>
           <Link
             to={Contents.header.blog.links[i18next.language]}
             className="p-1 text-center active:scale-90 px-4 w-full transition-all duration-150 rounded-md hover:bg-brand-red/20 bg-brand-red/10 text-brand-red"
