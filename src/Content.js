@@ -220,11 +220,11 @@ const Contents = {
     },
     {
       id: '1',
-      slug: 'our-services',
+      slug: 'our-supports',
       thumbnail: Images.blogImages.ourServices,
       title: {
-        tr: 'Hizmetlerimiz',
-        en: 'Our Services',
+        tr: 'Desteklerimiz',
+        en: 'Our Supports',
       },
       body: postBody[1],
       excerpt: {
@@ -232,8 +232,8 @@ const Contents = {
         en: 'We produce course materials for schools and children in need. Our aim is qualified is to make education possible in every part of society...',
       },
       links: {
-        tr: '/tr/blog/our-services',
-        en: '/blog/our-services',
+        tr: '/tr/blog/our-supports',
+        en: '/blog/our-supports',
       },
       date: '2021-04-15',
       creator: 'İsmail İşler',
