@@ -205,7 +205,7 @@ const Images = {
     handPalmWaterBottleOpener,
     expandedBottleCapOpener,
     pillCutter,
-    extendedZipper
+    extendedZipper,
   },
 };
 
