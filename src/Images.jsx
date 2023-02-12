@@ -70,6 +70,39 @@ import snake from './img/products/snake.webp';
 import birdHouse from './img/products/birdHouse.webp';
 import birdFoodContainer from './img/products/birdFoodContainer.webp';
 import automaticWaterCup from './img/products/automaticWaterCup.webp';
+import tweezers from './img/products/tweezers.jpeg';
+import jelatinholder from './img/products/jelatinholder.jpg';
+import thermosHolder from './img/products/thermosHolder.jpg';
+import pillBoxReminderSevenDay from './img/products/pillBoxReminderSevenDay.jpeg';
+import bagHolder from './img/products/bagHolder.jpg';
+import bagHolderWithWristSupport from './img/products/bagHolderWithWristSupport.jpg';
+import buttonUpTool from './img/products/buttonUpTool.jpg';
+import canOpener from './img/products/canOpener.jpg';
+import classicFlusherApparatus from './img/products/classicFlusherApparatus.jpg';
+import enlargedKeyHolder from './img/products/enlargedKeyHolder.jpg';
+import expandedWheelchairJoystick from './img/products/expandedWheelchairJoystick.jpg';
+import extendedFingerSplint from './img/products/extendedFingerSplint.jpg';
+import flusherWithExtendedSurface from './img/products/flusherWithExtendedSurface.jpg';
+import handOrthosis from './img/products/handOrthosis.jpg';
+import keyHolderWithFingerSupport from './img/products/keyHolderWithFingerSupport.jpg';
+import lKeyHolder from './img/products/lKeyHolder.jpg';
+import multipleBagHolder from './img/products/multipleBagHolder.jpg';
+import pencilHolder from './img/products/pencilHolder.jpg';
+import wheelchairCupHolder from './img/products/wheelchairCupHolder.jpg';
+import tapeMeasureHolder from './img/products/tapeMeasureHolder.jpg';
+import thumbBookHolder from './img/products/thumbBookHolder.jpg';
+import toothbrushWithHandAssist from './img/products/toothbrushWithHandAssist.jpg';
+import flatwareHoldingApparatus from './img/products/flatwareHoldingApparatus.jpeg';
+import zipperPuller from './img/products/zipperPuller.jpeg';
+import wideForkSpoonGripper from './img/products/wideForkSpoonGripper.jpeg';
+import doublePipetteHolder from './img/products/doublePipetteHolder.jpeg';
+import fingerPencil from './img/products/fingerPencil.jpeg';
+import fingerSplint from './img/products/fingerSplint.jpeg';
+import adaptiveKey from './img/products/adaptiveKey.jpeg';
+import handPalmWaterBottleOpener from './img/products/handPalmWaterBottleOpener.jpeg';
+import expandedBottleCapOpener from './img/products/expandedBottleCapOpener.jpeg';
+import pillCutter from './img/products/pillCutter.jpeg';
+import extendedZipper from './img/products/extendedZipper.jpeg';
 
 const Images = {
   Logo,
@@ -140,6 +173,39 @@ const Images = {
     birdHouse,
     birdFoodContainer,
     automaticWaterCup,
+    tweezers,
+    pillBoxReminderSevenDay,
+    bagHolder,
+    bagHolderWithWristSupport,
+    buttonUpTool,
+    canOpener,
+    thermosHolder,
+    classicFlusherApparatus,
+    enlargedKeyHolder,
+    expandedWheelchairJoystick,
+    extendedFingerSplint,
+    flusherWithExtendedSurface,
+    handOrthosis,
+    jelatinholder,
+    keyHolderWithFingerSupport,
+    lKeyHolder,
+    multipleBagHolder,
+    pencilHolder,
+    wheelchairCupHolder,
+    tapeMeasureHolder,
+    thumbBookHolder,
+    toothbrushWithHandAssist,
+    flatwareHoldingApparatus,
+    zipperPuller,
+    wideForkSpoonGripper,
+    fingerPencil,
+    doublePipetteHolder,
+    fingerSplint,
+    adaptiveKey,
+    handPalmWaterBottleOpener,
+    expandedBottleCapOpener,
+    pillCutter,
+    extendedZipper
   },
 };
 
