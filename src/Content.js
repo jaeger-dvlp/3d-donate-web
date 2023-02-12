@@ -26,47 +26,49 @@ we believe we will create.\n<img class='w-full my-7' src=${Images.blogImages.blo
   },
   {
     id: '1',
-    tr: `<strong>Eğitime destek:</strong>\n
-İhtiyaç sahibi okullar ve çocuklar için ders materyalleri üretiyoruz. Amacımız nitelikli
-eğitimi toplum her kesiminde mümkün kılabilmektir.
-Sağlığa destek:
-Doğuştan veya sonradan oluşan engellilik yaşam kalitesini etkilemektedir. Üç boyutlu
-evrensel tasarımlarla yaşam kalitesini yükseltmeyi, hayatları kolaylaştırmayı ve
-bireylerin bağımsızlık kazanmasını amaçlıyoruz.\n
-<strong>Çocuk gelişimi:</strong>\n
-Çocukluk evresinde hayal gücünü desteklemek çocuklara oyun oynama imkanı
-sunabilmek yetişkin dönemde topluma faydalı birey olabilmesi için önemlidir.
-Oyuncak erişimi olmayan çocuklar için oyuncaklar üretip gelişimlerini destekliyoruz.\n
-<strong>Toplumsal gelişim:</strong>\n
-Yardım etmeyi ve bunun verdiği mutluluğu tüm topluma yayabilmek için küçük
-dokunuşları platformumuza entegre ettik. Platformumuzda sokak hayvanları için
-üreteceğimiz ihtiyaçları, imza toplama yöntemiyle kolay bir sebebe bağlayarak
-toplumun iyilik yapabilmesi için ortam oluşturduk.\n
-<strong>Doğaya ve hayvanlara destek:</strong>\n
-Bizimle aynı havayı soluyan ve günde en az bir kere karşılaştığımız hayvanlar gerek
-hayata tutunma da gerekse yeni icatlar çıkarmada insanlığa ciddi katkılar sağlamıştır.
-Bu bilinçle bizde onların ihtiyaçlarını tespit edip ürünler üretiyoruz.\n
+    tr: `<strong>Teknoloji gerektirmeyen oyuncaklar kategorisi:</strong>\n
+Özellikle doğal afet yaşayan çocukların serbest zaman aktivitesi geçirebilmesi ve yaşanan
+durumu hızlı atlatabilmesi için oyuncaklarla vakit geçiriyor olması çok önemlidir. Yaşanılan
+afete uygun kabul edilmiş kriterlerde verilen oyuncaklar, çocukların travma sonrası anılarının canlanmasının önüne geçecektir. Alanında uzman gönüllülerimizle bu kriterlere uygun oyuncakları tüm afet çeşitlerine göre tasarlıyoruz.\n
+<strong>Yardımcı Teknoloji kategorisi:</strong>\n
+Bireylerin ve çocukların yaşadığı engele göre özel olarak üretilmiş ürünleri kapsamaktadır.
+Örneğin; <a href="https://www.3ddonate.com/tr/products/fork-spoon-holder">çatal-kaşık tutma aparatı</a>, bireyin yemek yeme esnasında anlık olarak ve hızlı
+şekilde ihtiyacını gidermesi için tasarlanmış evrensel bir üründür. Bu kategoride amacımız
+her bir aktivite için 10 farklı modelde <a href="https://www.3ddonate.com/tr/products/fork-spoon-holder-with-grip">örneğin farklı bir çatal-kaşık tutma aparatı</a> üretmek ve
+bu aktiviteyle ilgili yaşanan problemi en aza indirmektir\n
+<strong>Orta-yüksek seviye teknoloji gerektiren ürünler kategorisi:</strong>\n
+Bireylerin bağımsızlığı ve ihtiyaçlarının doğru anlaşılması ve giderilmesi için gönüllülerimiz
+ve işbirliği yaptığımız kurumlarla hep bir adım ilerisini düşünmekteyiz. Bu sebeple
+kaynaklarımızı orta-yüksek seviye teknoloji gerektiren ürünlerde de kullanıyoruz. Arduino ile
+yapılmış devrelerle gerek oyuncak kategorimizde gerekse yardımcı teknoloji kategorimizde
+ürettiğimiz ürünleri hareketli ve komut algılayan nesneler haline getiriyoruz. Bağımsızlığın
+sağlanması için gerekli önerileri dinliyor ve benzer çalışmaları yakından takip ediyoruz.\n
+<strong>Yüksek teknolojili ürünler kategorisi:</strong>\n
+İleri seviye teknik bilgi ve ileri seviye teknolojinin birleşimi ile yapılan ürünlerimizi bu
+kategoride listeliyoruz. Gelişmiş ortez & protezleri ve estetik görüntüsüyle cerrah, terapist ve
+mühendislerle birlikte karar verdiği kullanıma uygun bir şekilde tasarlanmış ürünlerimi
+içermektedir. Uzuv kaybı ve felç geçiren bireylerin yaşam kalitesini daha fazla geliştirmek için çalışıyoruz.\n
 <img class='w-full my-7' src=${Images.blogImages.blogContent2} />`,
-    en: `<strong>Support for education:</strong>\n
-We produce course materials for schools and children in need. Our aim is qualified
-is to make education possible in every part of society.
-Health support:
-Congenital or acquired disability affects quality of life. Three dimensional
-to increase the quality of life, to make life easier, and to
-We aim for individuals to gain independence.\n
-<strong>Child development:</strong>\n
-Supporting the imagination in the childhood stage, the opportunity to play games for children
-It is important to be able to serve as a useful individual to the society in adulthood.
-We produce toys for children who do not have access to toys and support their development.\n
-<strong>Social development:</strong>\n
-In order to help and spread the happiness it brings to the whole society, small
-We have integrated touches into our platform. For street animals on our platform
-by connecting the needs we will produce to an easy reason with the signature collection method.
-We created an environment for society to do good.\n
-<strong>Supporting nature and animals:</strong>\n
-We need animals that breathe the same air as us and that we meet at least once a day.
-It has made serious contributions to humanity both in clinging to life and in making new inventions.
-With this awareness, we identify their needs and produce products.\n
+    en: `<strong>Non-tech toys category:</strong>\n
+In particular, children experiencing natural disasters can have free time activities and
+It is very important that he spends time with toys in order to get over the situation quickly.
+lived Toys, which are given in criteria accepted as suitable for disaster, will prevent the revival of post-traumatic memories of children. With our volunteers who are experts in their fields, we design toys that meet these criteria for all types of disasters.\n
+<strong>Assistant Technology category:</strong>\n
+It includes products that are specially produced according to the disability experienced by individuals and children.
+For example; <a href="https://www.3ddonate.com/tr/products/fork-spoon-holder">Fork-spoon holder</a>, the individual's instant and fast food while eating
+It is a universal product designed to meet your needs. Our aim in this category
+producing a different cutlery holder for each activity in 10 different models <a href="https://www.3ddonate.com/en/products/fork-spoon-holder-with-grip">for example And
+to minimize the problem with this activity\n
+<strong>Category of products requiring medium-high technology:</strong>\n
+Our volunteers for the independence of individuals and the correct understanding and fulfillment of their needs and with the institutions we cooperate with, we always think one step ahead.
+Therefore we also use our resources in products that require medium-high technology. with Arduino
+with circuits made both in our toys category and in our assistive technology category.
+We turn the products we produce into moving and command-perceiving objects. your independence we listen to the necessary suggestions and follow similar studies closely.\n
+<strong>High-tech products category:</strong>\n
+Our products, which are made with the combination of advanced technical knowledge and advanced technology,
+we list in category. With its advanced orthotics & prostheses and aesthetic appearance, surgeon, therapist and
+my products designed in accordance with the use that he decided together with the engineers contains.
+We work to further improve the quality of life of individuals suffering from limb loss and stroke.\n
 <img class='w-full my-7' src=${Images.blogImages.blogContent2} />`,
   },
   {
